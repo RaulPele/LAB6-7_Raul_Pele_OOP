@@ -16,10 +16,75 @@
     <Filter Include="Header Files\Domain">
       <UniqueIdentifier>{c7549201-d7c8-4faf-a266-e8523c991a54}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Domain">
+      <UniqueIdentifier>{2f2f5a2d-52e9-447a-8add-860a2d48cf48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Repository">
+      <UniqueIdentifier>{7546d450-4a8b-4e5b-bb0e-dc9eaff5ed2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Repository">
+      <UniqueIdentifier>{9d6149e4-e09f-4821-b12f-161a9fd1bdae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Validation">
+      <UniqueIdentifier>{a1d2da7d-d6f7-48d9-a17c-1b4ce74c9811}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Testing">
+      <UniqueIdentifier>{461d2001-a9bd-45a4-bdc7-be50e12e65d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Testing">
+      <UniqueIdentifier>{77523334-dd70-4e1a-9399-752c2acd5cc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Business">
+      <UniqueIdentifier>{fcb34141-af81-43ff-8be6-5b6a16ba7491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Business">
+      <UniqueIdentifier>{be3df01f-4b1f-4ab1-a021-1bfd50b0a968}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI">
+      <UniqueIdentifier>{3483d75e-2b1b-45a8-8c34-106bc06a33b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{5791cabc-43a4-467f-bff3-1f333b18cfa5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Discipline.cpp">
+      <Filter>Source Files\Domain</Filter>
+    </ClCompile>
+    <ClCompile Include="DisciplineRepo.cpp">
+      <Filter>Source Files\Repository</Filter>
+    </ClCompile>
+    <ClCompile Include="tests.cpp">
+      <Filter>Source Files\Testing</Filter>
+    </ClCompile>
+    <ClCompile Include="DisciplineService.cpp">
+      <Filter>Source Files\Business</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Discipline.h">
+      <Filter>Header Files\Domain</Filter>
+    </ClInclude>
+    <ClInclude Include="DisciplineRepo.h">
+      <Filter>Header Files\Repository</Filter>
+    </ClInclude>
+    <ClInclude Include="Errors.h">
+      <Filter>Header Files\Validation</Filter>
+    </ClInclude>
+    <ClInclude Include="tests.h">
+      <Filter>Header Files\Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="DisciplineService.h">
+      <Filter>Header Files\Business</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
