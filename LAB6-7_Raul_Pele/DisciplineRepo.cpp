@@ -17,12 +17,13 @@ const Discipline& DisciplineRepo::findDiscipline(const string& name, const strin
 }
 
 bool DisciplineRepo::exists(const Discipline& discipline) const{
-	for (const Discipline& d : this->disciplines) {
-		if (discipline == d) {
-			return true;
-		}
+	try {
+		findDiscipline(discipline.getName(), discipline.getType());
+		return true;
 	}
-	return false;
+	catch (DiscNotFoundError&) {
+		return false;
+	}
 }
 
 void DisciplineRepo::addDiscipline(const Discipline& discipline) {
@@ -34,7 +35,7 @@ void DisciplineRepo::addDiscipline(const Discipline& discipline) {
 }
 
 void DisciplineRepo::removeDiscipline(const string& name, const string& type) {
-	Discipline discipline = this->findDiscipline(name, type);
+	const Discipline& discipline = this->findDiscipline(name, type);
 
 	for (auto i = this->disciplines.begin(); i < this->disciplines.end(); i++) {
 		if (*i == discipline) {

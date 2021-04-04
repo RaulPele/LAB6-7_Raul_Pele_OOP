@@ -8,7 +8,7 @@ private:
 	DisciplineService& discSrv;
 
 public:
-	Console(DisciplineService& discSrv): discSrv(discSrv){}
+	Console(DisciplineService& discSrv) noexcept : discSrv(discSrv) {}
 
 	/*
 	Adauga o disciplina in lista.

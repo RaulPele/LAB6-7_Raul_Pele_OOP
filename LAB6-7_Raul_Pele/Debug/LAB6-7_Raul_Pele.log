@@ -1,2 +1,8 @@
-﻿  tests.cpp
+﻿  DisciplineService.cpp
   LAB6-7_Raul_Pele.vcxproj -> C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\Debug\LAB6-7_Raul_Pele.exe
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Discipline.h(18): warning C26432: If you define or delete any default operation in the type 'class Discipline', define or delete them all (c.21).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\DisciplineService.h(12): warning C26440: Function 'DisciplineService::DisciplineService' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Errors.h(11): warning C26440: Function 'Error::getMessage' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Discipline.cpp(15): warning C26440: Function 'Discipline::getHoursPerWeek' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Discipline.cpp(19): warning C26440: Function 'Discipline::operator==' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\DisciplineRepo.cpp(6): warning C26440: Function 'DisciplineRepo::getAll' can be declared 'noexcept' (f.6).

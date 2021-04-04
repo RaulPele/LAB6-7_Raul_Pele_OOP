@@ -1,14 +1,14 @@
 #include "Discipline.h"
 
-string Discipline::getName() const{
+string Discipline::getName() const  {
 	return this->name;
 }
 
-string Discipline::getTeacher() const {
+string Discipline::getTeacher() const  {
 	return this->teacher;
 }
 
-string Discipline::getType() const {
+string Discipline::getType() const  {
 	return this->type;
 }
 
@@ -17,5 +17,6 @@ int Discipline::getHoursPerWeek() const {
 }
 
 bool Discipline::operator==(const Discipline& a) const{
-	return this->name == a.name && this->type == a.type;
+	return this->name == a.name && this->type == a.type && this->hoursPerWeek == a.hoursPerWeek && \
+		this->teacher == a.teacher;
 }

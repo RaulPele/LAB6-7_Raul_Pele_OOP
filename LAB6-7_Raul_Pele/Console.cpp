@@ -35,7 +35,8 @@ void Console::addDiscipline() {
 	cin >> hoursPerWeek;
 
 	cout << "Dati profesorul: \n";
-	cin >> teacher;
+	//cin >> teacher;
+	getchar();
 	getline(cin, teacher);
 
 
@@ -153,7 +154,7 @@ int Console::readOption(const vector<string>& options) const{
 		cout << "Optiune invalida!\n";
 		cout << "Optiunea trebuie sa fie din multimea: ";
 		for (unsigned int i = 0; i < options.size(); i++)
-			cout << options[i] << ' ';
+			cout << options.at(i) << ' ';
 		cout << endl;
 	}
 
@@ -165,7 +166,7 @@ void Console::run() {
 	/*void (Console:: * funct[4])() const= { &Console::addDiscipline, &Console::removeDiscipline,
 								& Console::findDiscipline,& Console::printDisciplines };*/
 	vector<string> options = { "1", "2", "3", "4", "5", "0"};
-	int op;
+	int op = 0;
 
 	while (true) {
 		displayMenu();
@@ -193,7 +194,11 @@ void Console::run() {
 		case 5:
 			this->printDisciplines();
 			break;
+
+		default:
+			break;
 		}
 
+		
 	}
 }

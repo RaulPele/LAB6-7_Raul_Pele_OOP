@@ -3,12 +3,14 @@
 #include <vector>
 #include "Discipline.h"
 #include "Errors.h"
+#include<iostream>
 
 using namespace std;
 
 void DisciplineService::addDiscipline(const string& name, const string& type, const int hoursPerWeek, const string& teacher) {
 	//TODO: validate  data
-	Discipline discipline = Discipline(name, type, hoursPerWeek, teacher);
+	const Discipline& discipline{ name, type, hoursPerWeek, teacher };
+	//std::cout << discipline.getTeacher() << "<- profesor\n";
 	this->discRepo.addDiscipline(discipline);
 	
 }
@@ -46,8 +48,8 @@ void DisciplineService::modifyDiscipline(const string& name, const string& type,
 		newTeacher = disc.getTeacher();
 	}
 
-	this->discRepo.removeDiscipline(name, type);
 	const Discipline& newDisc{ newName, newType, newHours, newTeacher };
+	this->discRepo.removeDiscipline(name, type);
 	this->discRepo.addDiscipline(newDisc);
 	
 }

@@ -9,7 +9,7 @@ void testAddDiscRepo() {
 	DisciplineRepo repo;
 	Discipline d1 = Discipline("OOP", "Laborator", 2, "AB");
 	repo.addDiscipline(d1);
-	assert(repo.getAll()[0] == d1);
+	assert(repo.getAll().at(0) == d1);
 	try {
 		repo.addDiscipline(d1);
 	}
@@ -127,7 +127,7 @@ void testGetAllSrv() {
 
 	assert(v.size() == repo.getAll().size());
 	for (unsigned int i = 0; i < v.size(); i++) {
-		assert(v[i] == repo.getAll()[i]);
+		assert(v.at(i) == repo.getAll().at(i));
 	}
 }
 
@@ -138,19 +138,19 @@ void testModifyDiscSrv() {
 
 	string newName{ "A" }, newType, newTeacher;
 	srv.modifyDiscipline("OOP", "Laborator", newName, newType, -1, newTeacher);
-	assert(srv.getAll()[0].getName() == "A");
+	assert(srv.getAll().at(0).getName() == "A");
 	newName = "", newType = "A";
 
 	srv.modifyDiscipline("A", "Laborator", newName, newType, -1, newTeacher);
-	assert(srv.getAll()[0].getType() == "A");
+	assert(srv.getAll().at(0).getType() == "A");
 
 	newName = "", newType = "";
 	srv.modifyDiscipline("A", "A", newName, newType, 2, newTeacher);
-	assert(srv.getAll()[0].getHoursPerWeek() == 2);
+	assert(srv.getAll().at(0).getHoursPerWeek() == 2);
 
 	newTeacher = "A";
 	srv.modifyDiscipline("A", "A", newName, newType, -1, newTeacher);
-	assert(srv.getAll()[0].getTeacher() == "A");
+	assert(srv.getAll().at(0).getTeacher() == "A");
 }
 
 void testDomain() {
