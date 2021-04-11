@@ -1,10 +1,14 @@
 ﻿  Console.cpp
   DisciplineRepo.cpp
   DisciplineService.cpp
+  LinkedList.cpp
+  compare.cpp
   main.cpp
   tests.cpp
+  validators.cpp
   Running Code Analysis for C/C++...
   Generating Code...
+  LINK : C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\Debug\LAB6-7_Raul_Pele.exe not found or not built by the last incremental link; performing full link
   LAB6-7_Raul_Pele.vcxproj -> C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\Debug\LAB6-7_Raul_Pele.exe
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Discipline.h(18): warning C26432: If you define or delete any default operation in the type 'class Discipline', define or delete them all (c.21).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\DisciplineService.h(17): warning C26440: Function 'DisciplineService::DisciplineService' can be declared 'noexcept' (f.6).
