@@ -147,12 +147,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="compare.cpp" />
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="Discipline.cpp" />
     <ClCompile Include="DisciplineRepo.cpp" />
     <ClCompile Include="DisciplineService.cpp" />
+    <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="tests.cpp" />
+    <ClCompile Include="validators.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Console.h" />
@@ -160,7 +163,13 @@
     <ClInclude Include="DisciplineRepo.h" />
     <ClInclude Include="DisciplineService.h" />
     <ClInclude Include="Errors.h" />
+    <ClInclude Include="compare.h" />
+    <ClInclude Include="LIIterator.h" />
+    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="Node.h" />
+    <ClInclude Include="sort.h" />
     <ClInclude Include="tests.h" />
+    <ClInclude Include="validators.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

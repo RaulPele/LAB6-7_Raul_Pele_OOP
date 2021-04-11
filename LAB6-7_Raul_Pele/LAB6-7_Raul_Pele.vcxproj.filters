@@ -19,12 +19,6 @@
     <Filter Include="Source Files\Domain">
       <UniqueIdentifier>{2f2f5a2d-52e9-447a-8add-860a2d48cf48}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Repository">
-      <UniqueIdentifier>{7546d450-4a8b-4e5b-bb0e-dc9eaff5ed2d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\Repository">
-      <UniqueIdentifier>{9d6149e4-e09f-4821-b12f-161a9fd1bdae}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Header Files\Validation">
       <UniqueIdentifier>{a1d2da7d-d6f7-48d9-a17c-1b4ce74c9811}</UniqueIdentifier>
     </Filter>
@@ -46,6 +40,27 @@
     <Filter Include="Source Files\UI">
       <UniqueIdentifier>{5791cabc-43a4-467f-bff3-1f333b18cfa5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Data">
+      <UniqueIdentifier>{8ee68062-63bf-4196-bf18-f14384e1ad2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Data\Repository">
+      <UniqueIdentifier>{7546d450-4a8b-4e5b-bb0e-dc9eaff5ed2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data">
+      <UniqueIdentifier>{0f3f6fe5-a787-4564-abc7-98c149dacb62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Data\Repository">
+      <UniqueIdentifier>{9d6149e4-e09f-4821-b12f-161a9fd1bdae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utility">
+      <UniqueIdentifier>{9e221af2-4ad7-42eb-b46f-d51588380bf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utility">
+      <UniqueIdentifier>{664e32d1-297d-42f5-b889-b67d89c88fa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Validation">
+      <UniqueIdentifier>{f24d4862-f254-40d8-bd65-53eea2fb4ce2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -55,7 +70,7 @@
       <Filter>Source Files\Domain</Filter>
     </ClCompile>
     <ClCompile Include="DisciplineRepo.cpp">
-      <Filter>Source Files\Repository</Filter>
+      <Filter>Source Files\Data\Repository</Filter>
     </ClCompile>
     <ClCompile Include="tests.cpp">
       <Filter>Source Files\Testing</Filter>
@@ -66,13 +81,22 @@
     <ClCompile Include="Console.cpp">
       <Filter>Source Files\UI</Filter>
     </ClCompile>
+    <ClCompile Include="LinkedList.cpp">
+      <Filter>Source Files\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="compare.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="validators.cpp">
+      <Filter>Source Files\Validation</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Discipline.h">
       <Filter>Header Files\Domain</Filter>
     </ClInclude>
     <ClInclude Include="DisciplineRepo.h">
-      <Filter>Header Files\Repository</Filter>
+      <Filter>Header Files\Data\Repository</Filter>
     </ClInclude>
     <ClInclude Include="Errors.h">
       <Filter>Header Files\Validation</Filter>
@@ -85,6 +109,24 @@
     </ClInclude>
     <ClInclude Include="Console.h">
       <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
+      <Filter>Header Files\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Header Files\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="LIIterator.h">
+      <Filter>Header Files\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="compare.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="sort.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="validators.h">
+      <Filter>Header Files\Validation</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

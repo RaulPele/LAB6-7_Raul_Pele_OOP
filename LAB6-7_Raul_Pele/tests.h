@@ -10,4 +10,15 @@ void testRemoveDiscSrv();
 void testFindDiscSrv();
 void testModifyDiscSrv();
 
+//filters
+void testFilterDisciplines();
+
+//sorting
+void testSortDisciplines();
+
+
 void testDomain();
+
+void testLinkedList();
+void testValidateName();
+void testValidateHours();

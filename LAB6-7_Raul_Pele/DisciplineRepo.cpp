@@ -1,14 +1,15 @@
 #include "DisciplineRepo.h"
 #include "Discipline.h"
 #include "Errors.h"
+#include "LIIterator.h"
 using namespace std;
 
-const vector<Discipline>& DisciplineRepo::getAll() const{
+const LinkedList<Discipline>& DisciplineRepo::getAll() const{
 	return this->disciplines;
 }
 
 const Discipline& DisciplineRepo::findDiscipline(const string& name, const string& type) const{
-	for (const auto& discipline : this->disciplines) {
+	for (const Discipline& discipline: this->disciplines) {
 		if (discipline.getName() == name && discipline.getType() == type) {
 			return discipline;
 		}
@@ -31,15 +32,15 @@ void DisciplineRepo::addDiscipline(const Discipline& discipline) {
 		throw DiscExistsError("Disciplina se afla deja in lista!");
 	}
 
-	this->disciplines.push_back(discipline);
+	this->disciplines.add(discipline);
 }
 
 void DisciplineRepo::removeDiscipline(const string& name, const string& type) {
 	const Discipline& discipline = this->findDiscipline(name, type);
 
-	for (auto i = this->disciplines.begin(); i < this->disciplines.end(); i++) {
-		if (*i == discipline) {
-			this->disciplines.erase(i);
+	for (LIIterator<Discipline> it = this->disciplines.begin(); it.valid(); it.next()) {
+		if (it.value() == discipline) {
+			this->disciplines.remove(it);
 			return;
 		}
 	}

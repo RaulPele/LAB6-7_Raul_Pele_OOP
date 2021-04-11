@@ -28,7 +28,7 @@ public:
 	/*
 	Afiseaza toate disciplinele listei.
 	*/
-	void printDisciplines() const;
+	void printDisciplines(const LinkedList<Discipline>& disciplines) const;
 
 	/*
 	Afiseaza meniul aplicatiei
@@ -54,4 +54,15 @@ public:
 	Modifica o disciplina din lista.
 	*/
 	void modifyDiscipline();
+
+	/*
+	Filtreaza disciplinele dupa un criteriu.
+	*/
+	void filterDisciplines();
+
+	void filterDisciplineByHours();
+	
+	void filterDisciplineByTeacher();
+
+	void sortDisciplines();
 };

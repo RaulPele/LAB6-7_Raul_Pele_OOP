@@ -1,16 +1,17 @@
 #pragma once
 #include <vector>
 #include "Discipline.h"
+#include "LinkedList.h"
 
 class DisciplineRepo {
 private:
-	vector<Discipline> disciplines;
+	LinkedList<Discipline> disciplines;
 
 public:
 	/*
 	Returneaza o referinta const la lista de discipline.
 	*/
-	const vector<Discipline>& getAll() const;
+	const LinkedList<Discipline>& getAll() const;
 
 	/*
 	preconditii: name - const string& -> referinta la numele disciplinei care se cauta

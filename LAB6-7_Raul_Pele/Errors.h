@@ -20,3 +20,8 @@ class DiscExistsError : public Error {
 public:
 	DiscExistsError(const string& message) : Error(message) {}
 };
+
+class InvalidDataError : public Error {
+public:
+	InvalidDataError(const string& message): Error(message){}
+};

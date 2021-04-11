@@ -32,14 +32,174 @@
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>DisciplineRepo.cpp</FILENAME>
-      <LINE>6</LINE>
-      <COLUMN>42</COLUMN>
+      <LINE>7</LINE>
+      <COLUMN>46</COLUMN>
     </SFA>
     <DEFECTCODE>26440</DEFECTCODE>
     <DESCRIPTION>Function 'DisciplineRepo::getAll' can be declared 'noexcept' (f.6).</DESCRIPTION>
     <FUNCTION>DisciplineRepo::getAll</FUNCTION>
-    <DECORATED>?getAll@DisciplineRepo@@QBEABV?$vector@VDiscipline@@V?$allocator@VDiscipline@@@std@@@std@@XZ</DECORATED>
-    <FUNCLINE>6</FUNCLINE>
+    <DECORATED>?getAll@DisciplineRepo@@QBEABV?$LinkedList@VDiscipline@@@@XZ</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LinkedList.h</FILENAME>
+      <LINE>87</LINE>
+      <COLUMN>45</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>LinkedList&lt;Discipline&gt;::add</FUNCTION>
+    <DECORATED>?add@?$LinkedList@VDiscipline@@@@QAEXABVDiscipline@@@Z</DECORATED>
+    <FUNCLINE>86</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LinkedList.h</FILENAME>
+      <LINE>87</LINE>
+      <COLUMN>45</COLUMN>
+    </SFA>
+    <DEFECTCODE>26400</DEFECTCODE>
+    <DESCRIPTION>Do not assign the result of an allocation or a function call with an owner&lt;T&gt; return value to a raw pointer, use owner&lt;T&gt; instead (i.11).</DESCRIPTION>
+    <FUNCTION>LinkedList&lt;Discipline&gt;::add</FUNCTION>
+    <DECORATED>?add@?$LinkedList@VDiscipline@@@@QAEXABVDiscipline@@@Z</DECORATED>
+    <FUNCLINE>86</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LinkedList.h</FILENAME>
+      <LINE>123</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>6011</DEFECTCODE>
+    <DESCRIPTION>Dereferencing NULL pointer 'current'. See line 119 for an earlier location where this can occur</DESCRIPTION>
+    <FUNCTION>LinkedList&lt;Discipline&gt;::remove</FUNCTION>
+    <DECORATED>?remove@?$LinkedList@VDiscipline@@@@QAEXAAV?$LIIterator@VDiscipline@@@@@Z</DECORATED>
+    <FUNCLINE>103</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>108</LINE>
+        <COLUMN>15</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>109</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>117</LINE>
+        <COLUMN>16</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>119</LINE>
+        <COLUMN>37</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>'current' may be NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+        <FILENAME>LinkedList.h</FILENAME>
+        <LINE>123</LINE>
+        <COLUMN>10</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'current' is dereferenced, but may still be NULL</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LIIterator.h</FILENAME>
+      <LINE>32</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'LIIterator&lt;Discipline&gt;::next' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>LIIterator&lt;Discipline&gt;::next</FUNCTION>
+    <DECORATED>?next@?$LIIterator@VDiscipline@@@@QAEXXZ</DECORATED>
+    <FUNCLINE>32</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LIIterator.h</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'LIIterator&lt;Discipline&gt;::valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>LIIterator&lt;Discipline&gt;::valid</FUNCTION>
+    <DECORATED>?valid@?$LIIterator@VDiscipline@@@@QBE_NXZ</DECORATED>
+    <FUNCLINE>37</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LIIterator.h</FILENAME>
+      <LINE>58</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'LIIterator&lt;Discipline&gt;::operator!=' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>LIIterator&lt;Discipline&gt;::!=</FUNCTION>
+    <DECORATED>??9?$LIIterator@VDiscipline@@@@QAE_NABV0@@Z</DECORATED>
+    <FUNCLINE>58</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LIIterator.h</FILENAME>
+      <LINE>17</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'LIIterator&lt;Discipline&gt;::LIIterator&lt;Discipline&gt;' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>LIIterator&lt;Discipline&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$LIIterator@VDiscipline@@@@QAE@ABV?$LinkedList@VDiscipline@@@@@Z</DECORATED>
+    <FUNCLINE>17</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Node.h</FILENAME>
+      <LINE>18</LINE>
+      <COLUMN>26</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Node&lt;Discipline&gt;::getData' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Node&lt;Discipline&gt;::getData</FUNCTION>
+    <DECORATED>?getData@?$Node@VDiscipline@@@@QAEAAVDiscipline@@XZ</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
 </DEFECTS>

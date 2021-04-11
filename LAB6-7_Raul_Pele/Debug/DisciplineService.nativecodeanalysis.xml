@@ -18,14 +18,14 @@
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>DisciplineService.h</FILENAME>
-      <LINE>12</LINE>
+      <LINE>17</LINE>
       <COLUMN>1</COLUMN>
     </SFA>
     <DEFECTCODE>26440</DEFECTCODE>
     <DESCRIPTION>Function 'DisciplineService::DisciplineService' can be declared 'noexcept' (f.6).</DESCRIPTION>
     <FUNCTION>DisciplineService::{ctor}</FUNCTION>
-    <DECORATED>??0DisciplineService@@QAE@AAVDisciplineRepo@@@Z</DECORATED>
-    <FUNCLINE>12</FUNCLINE>
+    <DECORATED>??0DisciplineService@@QAE@AAVDisciplineRepo@@ABVDisciplineValidator@@@Z</DECORATED>
+    <FUNCLINE>17</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -40,6 +40,174 @@
     <FUNCTION>Error::getMessage</FUNCTION>
     <DECORATED>?getMessage@Error@@QAEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ</DECORATED>
     <FUNCLINE>11</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LinkedList.h</FILENAME>
+      <LINE>18</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>LinkedList&lt;Discipline&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$LinkedList@VDiscipline@@@@QAE@XZ</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LinkedList.h</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>22</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class LinkedList&lt;class Discipline&gt;', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>LinkedList&lt;Discipline&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$LinkedList@VDiscipline@@@@QAE@ABV0@@Z</DECORATED>
+    <FUNCLINE>37</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LinkedList.h</FILENAME>
+      <LINE>189</LINE>
+      <COLUMN>18</COLUMN>
+    </SFA>
+    <DEFECTCODE>26447</DEFECTCODE>
+    <DESCRIPTION>The function is declared 'noexcept' but calls function 'destroyList()' which may throw exceptions (f.6).</DESCRIPTION>
+    <FUNCTION>LinkedList&lt;Discipline&gt;::{dtor}</FUNCTION>
+    <DECORATED>??1?$LinkedList@VDiscipline@@@@QAE@XZ</DECORATED>
+    <FUNCLINE>188</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LinkedList.h</FILENAME>
+      <LINE>87</LINE>
+      <COLUMN>45</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>LinkedList&lt;Discipline&gt;::add</FUNCTION>
+    <DECORATED>?add@?$LinkedList@VDiscipline@@@@QAEXABVDiscipline@@@Z</DECORATED>
+    <FUNCLINE>86</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LinkedList.h</FILENAME>
+      <LINE>87</LINE>
+      <COLUMN>45</COLUMN>
+    </SFA>
+    <DEFECTCODE>26400</DEFECTCODE>
+    <DESCRIPTION>Do not assign the result of an allocation or a function call with an owner&lt;T&gt; return value to a raw pointer, use owner&lt;T&gt; instead (i.11).</DESCRIPTION>
+    <FUNCTION>LinkedList&lt;Discipline&gt;::add</FUNCTION>
+    <DECORATED>?add@?$LinkedList@VDiscipline@@@@QAEXABVDiscipline@@@Z</DECORATED>
+    <FUNCLINE>86</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LinkedList.h</FILENAME>
+      <LINE>150</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26429</DEFECTCODE>
+    <DESCRIPTION>Symbol 'cmp' is never tested for nullness, it can be marked as not_null (f.23).</DESCRIPTION>
+    <FUNCTION>LinkedList&lt;Discipline&gt;::sort</FUNCTION>
+    <DECORATED>?sort@?$LinkedList@VDiscipline@@@@QAEXP6A_NABVDiscipline@@0@Z_N@Z</DECORATED>
+    <FUNCLINE>150</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LIIterator.h</FILENAME>
+      <LINE>58</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'LIIterator&lt;Discipline&gt;::operator!=' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>LIIterator&lt;Discipline&gt;::!=</FUNCTION>
+    <DECORATED>??9?$LIIterator@VDiscipline@@@@QAE_NABV0@@Z</DECORATED>
+    <FUNCLINE>58</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LIIterator.h</FILENAME>
+      <LINE>17</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'LIIterator&lt;Discipline&gt;::LIIterator&lt;Discipline&gt;' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>LIIterator&lt;Discipline&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$LIIterator@VDiscipline@@@@QAE@ABV?$LinkedList@VDiscipline@@@@@Z</DECORATED>
+    <FUNCLINE>17</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LinkedList.h</FILENAME>
+      <LINE>174</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'LinkedList&lt;Discipline&gt;::destroyList' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>LinkedList&lt;Discipline&gt;::destroyList</FUNCTION>
+    <DECORATED>?destroyList@?$LinkedList@VDiscipline@@@@AAEXPAV?$Node@VDiscipline@@@@@Z</DECORATED>
+    <FUNCLINE>174</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Node.h</FILENAME>
+      <LINE>18</LINE>
+      <COLUMN>26</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Node&lt;Discipline&gt;::getData' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Node&lt;Discipline&gt;::getData</FUNCTION>
+    <DECORATED>?getData@?$Node@VDiscipline@@@@QAEAAVDiscipline@@XZ</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LIIterator.h</FILENAME>
+      <LINE>32</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'LIIterator&lt;Discipline&gt;::next' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>LIIterator&lt;Discipline&gt;::next</FUNCTION>
+    <DECORATED>?next@?$LIIterator@VDiscipline@@@@QAEXXZ</DECORATED>
+    <FUNCLINE>32</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LIIterator.h</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'LIIterator&lt;Discipline&gt;::valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>LIIterator&lt;Discipline&gt;::valid</FUNCTION>
+    <DECORATED>?valid@?$LIIterator@VDiscipline@@@@QBE_NXZ</DECORATED>
+    <FUNCLINE>37</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
 </DEFECTS>

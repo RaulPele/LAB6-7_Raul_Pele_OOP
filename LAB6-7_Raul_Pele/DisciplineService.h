@@ -2,14 +2,19 @@
 #include "DisciplineRepo.h"
 #include <string>
 #include <vector>
+#include "LinkedList.h"
+#include "validators.h"
 using namespace std;
+
 
 class DisciplineService {
 private:
 	DisciplineRepo& discRepo;
+	const DisciplineValidator& validator;
 
 public:
-	DisciplineService(DisciplineRepo& discRepo) : discRepo(discRepo) {};
+	//DisciplineService(DisciplineRepo& discRepo) : discRepo(discRepo){};
+	DisciplineService(DisciplineRepo& discRepo, const DisciplineValidator& validator) : discRepo(discRepo), validator(validator){};
 
 	/*
 	preconditii:  name - const string& name -> numele disciplinei care se adauga
@@ -50,7 +55,7 @@ public:
 	/*
 	Returneaza referinta constnata la lista de discipline.
 	*/
-	const vector<Discipline>& getAll() const;
+	const LinkedList<Discipline>& getAll() const;
 
 	/*
 	preconditii: name - const string& -> referinta la numele disciplinei care se cauta
@@ -60,4 +65,40 @@ public:
 	*/
 	const Discipline& findDiscipline(const string& name, const string& type);
 	
+	/*
+	preconditii: teacher - const string&  -> referinta la numele profesorului dupa care se filtreaza
+	postconditii: returneaza o lista de discipline avand profesorul teacher
+	*/
+	const LinkedList<Discipline> filterDisciplineByTeacher(const string& teacher);
+
+	/*
+	preconditii: hoursPerWeek - const int  -> numarul de ore pe saptamana dupa care se filtreaza
+	postconditii: returneaza o lista de discipline avand numarul de ore pe saptamana hoursPerWeek
+	*/
+	const LinkedList<Discipline> filterDisciplineByHours(const int hoursPerWeek);
+
+	/*
+	preconditii: mode - string modul in care se face sortarea
+	postconditii: return sorted - const LinkedList<Discipline> contine disciplinele sortate dupa nume
+
+	Sorteaza disciplinele dupa nume si returneaza rezultatul.
+	*/
+	const LinkedList<Discipline> sortDisciplinesByName(string mode);
+
+	/*
+	preconditii: mode - string modul in care se face sortarea
+	postconditii: return sorted - const LinkedList<Discipline> contine disciplinele sortate dupa numarul de ore pe saptamana
+
+	Sorteaza disciplinele dupa numarul de ore pe saptamana si returneaza rezultatul.
+	*/
+	const LinkedList<Discipline> sortDisciplinesByHours(string mode);
+
+	/*
+	preconditii: mode - string modul in care se face sortarea
+	postconditii: return sorted - const LinkedList<Discipline> contine disciplinele sortate dupa profesor si tip
+
+	Sorteaza disciplinele dupa profesor si tip si returneaza rezultatul.
+	*/
+	const LinkedList<Discipline> sortDisciplinesByTeacherAndType(string mode);
+
 };
