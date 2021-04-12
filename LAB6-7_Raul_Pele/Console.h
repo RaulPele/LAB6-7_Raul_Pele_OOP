@@ -28,7 +28,7 @@ public:
 	/*
 	Afiseaza toate disciplinele listei.
 	*/
-	void printDisciplines(const LinkedList<Discipline>& disciplines) const;
+	void printDisciplines(const vector<Discipline>& disciplines) const;
 
 	/*
 	Afiseaza meniul aplicatiei
@@ -60,9 +60,40 @@ public:
 	*/
 	void filterDisciplines();
 
+	/*
+	Filtreaza disciplinele dupa ore.
+	*/
 	void filterDisciplineByHours();
 	
+	/*
+	Filtreaza disciplinele dupa profesor.
+	*/
 	void filterDisciplineByTeacher();
 
+	/*
+	Sorteaza disciplinele dupa un criteriu.
+	*/
 	void sortDisciplines();
+
+	/*
+	Adauga o disciplina la contractul de studiu.
+	*/
+	void addToContract();
+
+	/*
+	Genereaza un contract aleator.
+	*/
+	void generateContract();
+
+	/*
+	Exporta contractul in format html.
+	*/
+	void exportContract();
+
+	/*Goleste contractul
+	*/
+	void clearContract();
+
+	void createReport();
+
 };

@@ -4,14 +4,28 @@
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>Discipline.h</FILENAME>
-      <LINE>18</LINE>
+      <LINE>14</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Discipline::{ctor}</FUNCTION>
+    <DECORATED>??0Discipline@@QAE@XZ</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Discipline.h</FILENAME>
+      <LINE>17</LINE>
       <COLUMN>1</COLUMN>
     </SFA>
     <DEFECTCODE>26432</DEFECTCODE>
     <DESCRIPTION>If you define or delete any default operation in the type 'class Discipline', define or delete them all (c.21).</DESCRIPTION>
     <FUNCTION>Discipline::{ctor}</FUNCTION>
     <DECORATED>??0Discipline@@QAE@ABV0@@Z</DECORATED>
-    <FUNCLINE>18</FUNCLINE>
+    <FUNCLINE>17</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
 </DEFECTS>

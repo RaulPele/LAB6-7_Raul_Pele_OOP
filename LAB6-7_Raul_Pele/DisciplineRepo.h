@@ -5,13 +5,13 @@
 
 class DisciplineRepo {
 private:
-	LinkedList<Discipline> disciplines;
+	vector<Discipline> disciplines;
 
 public:
 	/*
 	Returneaza o referinta const la lista de discipline.
 	*/
-	const LinkedList<Discipline>& getAll() const;
+	const vector<Discipline>& getAll() const;
 
 	/*
 	preconditii: name - const string& -> referinta la numele disciplinei care se cauta
@@ -44,4 +44,6 @@ public:
 	Verifica daca o disciplina se afla in lista.
 	*/
 	bool exists(const Discipline& discipline) const;
+
+	DisciplineRepo& operator=(const DisciplineRepo& other);
 };

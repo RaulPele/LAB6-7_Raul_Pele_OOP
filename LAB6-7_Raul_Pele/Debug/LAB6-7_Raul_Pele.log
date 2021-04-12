@@ -1,41 +1,34 @@
-﻿  Console.cpp
-  DisciplineRepo.cpp
-  DisciplineService.cpp
-  LinkedList.cpp
-  compare.cpp
-  main.cpp
-  tests.cpp
-  validators.cpp
-  Running Code Analysis for C/C++...
-  Generating Code...
-  LINK : C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\Debug\LAB6-7_Raul_Pele.exe not found or not built by the last incremental link; performing full link
+﻿  tests.cpp
   LAB6-7_Raul_Pele.vcxproj -> C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\Debug\LAB6-7_Raul_Pele.exe
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Discipline.h(18): warning C26432: If you define or delete any default operation in the type 'class Discipline', define or delete them all (c.21).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\DisciplineService.h(17): warning C26440: Function 'DisciplineService::DisciplineService' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Discipline.h(14): warning C26455: Default constructor may not throw. Declare it 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Discipline.h(17): warning C26432: If you define or delete any default operation in the type 'class Discipline', define or delete them all (c.21).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Contract.h(16): warning C26440: Function 'Contract::Contract' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\DisciplineCountDTO.h(13): warning C26440: Function 'DisciplineCountDTO::getCount' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\DisciplineCountDTO.h(14): warning C26440: Function 'DisciplineCountDTO::setCount' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\DisciplineCountDTO.h(17): warning C26455: Default constructor may not throw. Declare it 'noexcept' (f.6).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Errors.h(11): warning C26440: Function 'Error::getMessage' can be declared 'noexcept' (f.6).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Console.cpp(30): warning C26440: Function 'validateIntStr' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Contract.cpp(7): warning C26432: If you define or delete any default operation in the type 'class Contract', define or delete them all (c.21).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Contract.cpp(32): warning C26440: Function 'Contract::clear' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Contract.cpp(36): warning C26440: Function 'Contract::getAll' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Discipline.cpp(15): warning C26440: Function 'Discipline::getHoursPerWeek' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Discipline.cpp(19): warning C26440: Function 'Discipline::operator==' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\DisciplineRepo.cpp(8): warning C26440: Function 'DisciplineRepo::getAll' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\DisciplineService.cpp(209): warning C26496: The variable 'dist' is assigned only once, mark it as const (con.4).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\DisciplineService.cpp(210): warning C26496: The variable 'nr' is assigned only once, mark it as const (con.4).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\DisciplineService.cpp(197): warning C26493: Don't use C-style casts (type.4).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\main.cpp(14): warning C26496: The variable 'console' is assigned only once, mark it as const (con.4).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LinkedList.h(18): warning C26455: Default constructor may not throw. Declare it 'noexcept' (f.6).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LinkedList.h(188): warning C26432: If you define or delete any default operation in the type 'class LinkedList<class Discipline>', define or delete them all (c.21).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LinkedList.h(189): warning C26447: The function is declared 'noexcept' but calls function 'destroyList()' which may throw exceptions (f.6).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LinkedList.h(63): warning C26440: Function 'LinkedList<Discipline>::empty' can be declared 'noexcept' (f.6).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LIIterator.h(58): warning C26440: Function 'LIIterator<Discipline>::operator!=' can be declared 'noexcept' (f.6).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LIIterator.h(17): warning C26440: Function 'LIIterator<Discipline>::LIIterator<Discipline>' can be declared 'noexcept' (f.6).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LinkedList.h(174): warning C26440: Function 'LinkedList<Discipline>::destroyList' can be declared 'noexcept' (f.6).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LinkedList.h(87): warning C26409: Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LinkedList.h(87): warning C26400: Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Node.h(18): warning C26440: Function 'Node<Discipline>::getData' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LinkedList.h(123): warning C6011: Dereferencing NULL pointer 'current'. See line 119 for an earlier location where this can occur
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LinkedList.h(63): warning C26440: Function 'LinkedList<Discipline>::empty' can be declared 'noexcept' (f.6).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LIIterator.h(32): warning C26440: Function 'LIIterator<Discipline>::next' can be declared 'noexcept' (f.6).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LIIterator.h(37): warning C26440: Function 'LIIterator<Discipline>::valid' can be declared 'noexcept' (f.6).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Discipline.cpp(15): warning C26440: Function 'Discipline::getHoursPerWeek' can be declared 'noexcept' (f.6).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Discipline.cpp(19): warning C26440: Function 'Discipline::operator==' can be declared 'noexcept' (f.6).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\DisciplineRepo.cpp(7): warning C26440: Function 'DisciplineRepo::getAll' can be declared 'noexcept' (f.6).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LinkedList.h(123): warning C6011: Dereferencing NULL pointer 'current'. See line 119 for an earlier location where this can occur
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LinkedList.h(37): warning C26432: If you define or delete any default operation in the type 'class LinkedList<class Discipline>', define or delete them all (c.21).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LinkedList.h(150): warning C26429: Symbol 'cmp' is never tested for nullness, it can be marked as not_null (f.23).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\main.cpp(14): warning C26496: The variable 'console' is assigned only once, mark it as const (con.4).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\tests.cpp(208): warning C26496: The variable 'it' is assigned only once, mark it as const (con.4).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\tests.cpp(213): warning C26496: The variable 'it2' is assigned only once, mark it as const (con.4).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\tests.cpp(218): warning C26496: The variable 'it3' is assigned only once, mark it as const (con.4).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\tests.cpp(223): warning C26496: The variable 'it4' is assigned only once, mark it as const (con.4).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LIIterator.h(17): warning C26440: Function 'LIIterator<Discipline>::LIIterator<Discipline>' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LinkedList.h(174): warning C26440: Function 'LinkedList<Discipline>::destroyList' can be declared 'noexcept' (f.6).
+C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Node.h(18): warning C26440: Function 'Node<Discipline>::getData' can be declared 'noexcept' (f.6).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\validators.cpp(13): warning C26496: The variable 'c' is assigned only once, mark it as const (con.4).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\validators.cpp(22): warning C26440: Function 'DisciplineValidator::validateHoursPerWeek' can be declared 'noexcept' (f.6).

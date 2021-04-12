@@ -16,7 +16,7 @@ void Console::printDisc(const Discipline& disc) const{
 	cout << endl;
 }
 
-void Console::printDisciplines(const LinkedList<Discipline>& disciplines) const {
+void Console::printDisciplines(const vector<Discipline>& disciplines) const {
 	if (disciplines.empty()) {
 		cout << "Lista este goala!\n\n";
 		return;
@@ -101,8 +101,6 @@ void Console::removeDiscipline(){
 void Console::findDiscipline() const{
 	string name, type;
 
-	//printDisciplines(this->discSrv.getAll());
-
 	cout << "Dati numele disciplinei: \n";
 	getline(cin, name);
 	cout << "\n";
@@ -183,6 +181,11 @@ void Console::displayMenu() const {
 	cout << "5. Afisare discipline\n";
 	cout << "6. Filtrare discipline\n";
 	cout << "7. Sortare discipline\n";
+	cout << "8. Adauga la contract\n";
+	cout << "9. Generare contract aleator\n";
+	cout << "10. Exporta contractul\n";
+	cout << "11. Goleste contractul\n";
+	cout << "12. Creaza raport\n";
 	cout << "0. Iesire...\n\n";
 };
 
@@ -229,7 +232,7 @@ void Console::filterDisciplineByHours() {
 	hoursPerWeek = stoi(hrsStr);
 
 	try {
-		const LinkedList<Discipline> filtered = this->discSrv.filterDisciplineByHours(hoursPerWeek);
+		const vector<Discipline> filtered = this->discSrv.filterDisciplineByHours(hoursPerWeek);
 
 		if (filtered.empty()) {
 			cout << "Lista este goala!\n\n";
@@ -252,7 +255,7 @@ void Console::filterDisciplineByTeacher() {
 	getline(cin, teacher);
 
 	try {
-		const LinkedList<Discipline> filtered = this->discSrv.filterDisciplineByTeacher(teacher);
+		const vector<Discipline> filtered = this->discSrv.filterDisciplineByTeacher(teacher);
 		if (filtered.empty()) {
 			cout << "Lista este goala!\n\n";
 		}
@@ -294,7 +297,7 @@ void Console::filterDisciplines() {
 }
 
 void Console::sortDisciplines() {
-	LinkedList<Discipline> sorted;
+	vector<Discipline> sorted;
 	string field, mode;
 
 	if (this->discSrv.getAll().empty()) {
@@ -314,7 +317,6 @@ void Console::sortDisciplines() {
 			break;
 		}
 	}
-	
 
 	if (field == "nume") {
 		sorted = this->discSrv.sortDisciplinesByName(mode);
@@ -333,10 +335,105 @@ void Console::sortDisciplines() {
 	printDisciplines(sorted);
 }
 
+
+void Console::addToContract() {
+	const vector<Discipline>& disciplines = this->discSrv.getAll();
+
+	if (disciplines.empty()) {
+		cout << "Lista este goala!\n\n";
+	}
+	string name, type{"type"};
+
+	while (true && !disciplines.empty()) {
+		printDisciplines(disciplines);
+		cout << "Daca doriti sa iesiti apasati 0 \n";
+		cout << "Dati numele disciplinei care se adauga in contract: \n";
+		getline(cin, name);
+
+		if (name == "0") {
+			break;
+		}
+
+		//cout << "Dati tipul disciplinei care se adauga in contract: \n";
+		//getline(cin, type);
+
+		try {
+			this->discSrv.addToContract(name, type);
+		}
+		catch (Error& err) {
+			cout << err.getMessage() << "\n\n";
+		}
+	}
+
+	cout << "Numarul disciplinelor din contract este: " << this->discSrv.getContractLength() << "\n\n";
+}
+
+void Console::generateContract() {
+	if (this -> discSrv.getAll().empty()) {
+		cout << "Lista este goala!\n\n";
+		return;
+	}
+	string nrOfDiscStr;
+	 int nrOfDisc=0;
+
+	cout << "Dati numarul de discipline pe care il va contine contractul: \n";
+	getline(cin, nrOfDiscStr);
+
+	if (validateIntStr(nrOfDiscStr) == false) {
+		cout << "Numarul introdus este invalid!\n";
+		return;
+	}
+	nrOfDisc = stoi(nrOfDiscStr);
+
+	try {
+		this->discSrv.generateContract(nrOfDisc);
+	}
+	catch (Error& err) {
+		cout << err.getMessage() << "\n";
+	}
+	cout << "Numarul disciplinelor din contract este: " << this->discSrv.getContractLength() << "\n\n";
+
+}
+
+
+void Console::exportContract() {
+	if (this->discSrv.getContractLength() == 0) {
+		cout << "Contractul este gol!\n\n";
+		return;
+	}
+
+	string destFile;
+	cout << "Dati numele fisierului in care se exporta contractul (fara extensie): ";
+	getline(cin, destFile);
+
+	this->discSrv.exportContract(destFile);
+	cout << "Numarul disciplinelor din contract este: " << this->discSrv.getContractLength() << "\n\n";
+
+}
+
+void Console::clearContract() {
+	this->discSrv.clearContract();
+	cout << "Numarul disciplinelor din contract este: " << this->discSrv.getContractLength() << "\n\n";
+
+}
+
+void Console::createReport() {
+	if (this->discSrv.getAll().empty()) {
+		cout << "Lista este goala!\n\n";
+		return;
+	}
+	printDisciplines(this->discSrv.getAll());
+
+	map<string, DisciplineCountDTO> report = this->discSrv.createReport();
+	for (auto a : report) {
+		cout << a.first << " : " << a.second.getCount() << "\n";
+	}
+}
+
 void Console::run() {
 	/*void (Console:: * funct[4])() const= { &Console::addDiscipline, &Console::removeDiscipline,
 								& Console::findDiscipline,& Console::printDisciplines };*/
-	vector<string> options = { "1", "2", "3", "4", "5", "6", "7", "0"};
+	vector<string> options = { "1", "2", "3", "4", "5", "6", "7","8","9","10", "11","12", "0"};
 	int op = 0;
 
 	while (true) {
@@ -373,6 +470,27 @@ void Console::run() {
 		case 7:
 			this->sortDisciplines();
 			break;
+
+		case 8:
+			this->addToContract();
+			break;
+
+		case 9:
+			this->generateContract();
+			break;
+
+		case 10:
+			this->exportContract();
+			break;
+
+		case 11:
+			this->clearContract();
+			break;
+			
+		case 12:
+			this->createReport();
+			break;
+
 
 		default:
 			break;

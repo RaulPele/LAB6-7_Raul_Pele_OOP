@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Discipline.h</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Discipline::{ctor}</FUNCTION>
+    <DECORATED>??0Discipline@@QAE@XZ</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Discipline.h</FILENAME>
+      <LINE>17</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class Discipline', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>Discipline::{ctor}</FUNCTION>
+    <DECORATED>??0Discipline@@QAE@ABV0@@Z</DECORATED>
+    <FUNCLINE>17</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Contract.h</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Contract::Contract' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Contract::{ctor}</FUNCTION>
+    <DECORATED>??0Contract@@QAE@AAVDisciplineRepo@@@Z</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Errors.h</FILENAME>
+      <LINE>11</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Error::getMessage' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Error::getMessage</FUNCTION>
+    <DECORATED>?getMessage@Error@@QAEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ</DECORATED>
+    <FUNCLINE>11</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Contract.cpp</FILENAME>
+      <LINE>7</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class Contract', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>Contract::{ctor}</FUNCTION>
+    <DECORATED>??0Contract@@QAE@ABV0@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Contract.cpp</FILENAME>
+      <LINE>32</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Contract::clear' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Contract::clear</FUNCTION>
+    <DECORATED>?clear@Contract@@QAEXXZ</DECORATED>
+    <FUNCLINE>32</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Contract.cpp</FILENAME>
+      <LINE>36</LINE>
+      <COLUMN>30</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Contract::getAll' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Contract::getAll</FUNCTION>
+    <DECORATED>?getAll@Contract@@QAEAAV?$vector@VDiscipline@@V?$allocator@VDiscipline@@@std@@@std@@XZ</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

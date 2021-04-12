@@ -6,6 +6,9 @@
 #include "LinkedList.h"
 #include "LIIterator.h"
 #include "validators.h"
+#include "Contract.h"
+
+#include <vector>
 #include <assert.h>
 
 void testAddDiscRepo() {
@@ -18,12 +21,10 @@ void testAddDiscRepo() {
 	repo.addDiscipline(d2);
 	repo.addDiscipline(d3);
 
-	LIIterator<Discipline> it = repo.getAll().begin();
-	assert( it.value()== d1);
-	it.next();
-	assert(it.value() == d2);
-	it.next();
-	assert(it.value() == d3);
+	const vector<Discipline>& disciplines = repo.getAll();
+	assert(disciplines.at(0)== d1);
+	assert(disciplines.at(1) == d2);
+	assert(disciplines.at(2) == d3);
 
 	try {
 		repo.addDiscipline(d1);
@@ -180,20 +181,10 @@ void testGetAllSrv() {
 	DisciplineService srv{ repo , validator };
 	srv.addDiscipline("OOP", "Laborator", 2, "AB");
 
-	const LinkedList<Discipline>& v = srv.getAll();
-	LIIterator<Discipline> itV = v.begin();
-
-	LIIterator<Discipline> itRep = repo.getAll().begin();
-
-
-	assert(v.size() == repo.getAll().size());
-	for (unsigned int i = 0; i < v.size(); i++) {
-		assert(itV.value() == itRep.value());
-		itV.next();
-		itRep.next();
-	}
-	assert(itV.valid() == false);
-	assert(itRep.valid() == false);
+	vector<Discipline> result;
+	result.push_back(Discipline{ "OOP", "Laborator", 2, "AB" });
+	const vector<Discipline>& v = srv.getAll();
+	assert(v == result);
 }
 
 void testModifyDiscSrv() {
@@ -205,23 +196,19 @@ void testModifyDiscSrv() {
 
 	string newName{ "A" }, newType, newTeacher;
 	srv.modifyDiscipline("OOP", "Laborator", newName, newType, -1, newTeacher);
-	LIIterator<Discipline> it = repo.getAll().begin();
-	assert(it.value().getName() == "A");
+	assert(repo.getAll().at(0).getName() == "A");
 	newName = "", newType = "A";
 
 	srv.modifyDiscipline("A", "Laborator", newName, newType, -1, newTeacher);
-	LIIterator<Discipline> it2 = repo.getAll().begin();
-	assert(it2.value().getType() == "A");
+	assert(repo.getAll().at(0).getType() == "A");
 
 	newName = "", newType = "";
 	srv.modifyDiscipline("A", "A", newName, newType, 2, newTeacher);
-	LIIterator<Discipline> it3 = repo.getAll().begin();
-	assert(it3.value().getHoursPerWeek() == 2);
+	assert(repo.getAll().at(0).getHoursPerWeek() == 2);
 
 	newTeacher = "A";
 	srv.modifyDiscipline("A", "A", newName, newType, -1, newTeacher);
-	LIIterator<Discipline> it4 = repo.getAll().begin();
-	assert(it4.value().getTeacher() == "A");
+	assert(repo.getAll().at(0).getTeacher() == "A");
 
 	newName = "-123";
 	try {
@@ -239,6 +226,12 @@ void testDomain() {
 	assert(d.getHoursPerWeek() == 2);
 	assert(d.getTeacher() == "C");
 	assert(d.getType() == "B");
+
+	string result = "Nume: " + d.getName() + "\n" + \
+		"Tip: " + d.getType() + "\n" + \
+		"Ore pe saptamana: " + to_string(d.getHoursPerWeek()) + "\n" + \
+		"Profesor: " + d.getTeacher() + "\n";
+	assert(result == d.toString());
 }
 
 void testLinkedList(){
@@ -292,12 +285,10 @@ void testFilterDisciplines() {
 	repo.addDiscipline(d2);
 	repo.addDiscipline(d3);
 
-	LinkedList<Discipline> filtered = srv.filterDisciplineByTeacher("A");
+	vector<Discipline> filtered = srv.filterDisciplineByTeacher("A");
 
-	LIIterator<Discipline> it = filtered.begin();
-	assert(it.value() == d1);
-	it.next();
-	assert(it.value() == d2);
+	vector<Discipline> results{ d1, d2 };
+	assert(results == filtered);
 
 	try {
 		srv.filterDisciplineByTeacher("1239124sdfsdf");
@@ -308,10 +299,9 @@ void testFilterDisciplines() {
 	}
 
 	filtered = srv.filterDisciplineByHours(10);
-	auto it2 = filtered.begin();
-	assert(it2.value() == d2);
-	it2.next();
-	assert(it2.value() == d3);
+	results = { d2, d3 };
+	
+	assert(filtered == results);
 
 	try {
 		srv.filterDisciplineByHours(-123);
@@ -338,64 +328,142 @@ void testSortDisciplines() {
 	repo.addDiscipline(d3);
 
 
-	LinkedList<Discipline> sorted = srv.sortDisciplinesByHours("C");
-	auto it = sorted.begin();
-	assert(it.value() == d1);
-	it.next();
-	assert(it.value() == d3);
-	it.next();
-	assert(it.value() == d2);
+	vector<Discipline> sorted = srv.sortDisciplinesByHours("C");
+	vector<Discipline> results{ d1, d3, d2 };
+	assert(sorted == results);
 
 	sorted = srv.sortDisciplinesByHours("D");
-	auto it2 = sorted.begin();
-	assert(it2.value() == d2);
-	it2.next();
-	assert(it2.value() == d3);
-	it2.next();
-	assert(it2.value() == d1);
+	results = { d2, d3, d1 };
+	assert(sorted == results);
 
 
 	sorted = srv.sortDisciplinesByName("C");
-	auto it3 = sorted.begin();
-	assert(it3.value() == d1);
-	it3.next();
-	assert(it3.value() == d2);
-	it3.next();
-	assert(it3.value() == d3);
+	results = { d1, d2, d3 };
+	assert(results == sorted);
 
 	sorted = srv.sortDisciplinesByName("D");
-	auto it4 = sorted.begin();
-	assert(it4.value().getName() == "E");
-	it4.next();
-	assert(it4.value().getName() == "C");
-	it4.next();
-	assert(it4.value().getName() == "A");
+	results = { d3, d2, d1 };
+	assert(results == sorted);
 
 	Discipline d4{ "A", "C", 3, "Q" };
 	repo.addDiscipline(d4);
 
 	sorted = srv.sortDisciplinesByTeacherAndType("D");
-	auto it5 = sorted.begin();
+	results = { d4, d3, d2, d1 };
+	assert(sorted == results);
 
-	assert(it5.value().getTeacher() == "Q");
-	assert(it5.value().getType() == "C");
-	it5.next();
+	Discipline d5{ "A", "A", 3, "A" };
+	Discipline d6{ "B", "B", 3, "B" };
+	assert(cmpName(d5, d6) == true);
+	assert(cmpTeacherAndType(d5, d6) == true);
+}
 
-	assert(it5.value().getTeacher() == "B");
-	assert(it5.value().getType() == "F");
-	it5.next();
+void testAddToContractSrv() {
+	DisciplineRepo repo;
+	DisciplineValidator validator;
+	DisciplineService srv{ repo, validator };
 
+	Discipline d1{ "A", "B", 2, "A" };
+	Discipline d2{ "C", "D", 100, "A" };
+	Discipline d3{ "E","F", 10, "B" };
 
-	assert(it5.value().getTeacher() == "A");
-	assert(it5.value().getType() == "D");
-	it5.next();
+	repo.addDiscipline(d1);
+	repo.addDiscipline(d2);
+	repo.addDiscipline(d3);
 
-	assert(it5.value().getTeacher() == "A");
-	assert(it5.value().getType() == "B");
-	it5.next();
+	try {
+		srv.addToContract("-3123", "qwe2");
+		assert(false);
+	}
+	catch (InvalidDataError&) {
+		assert(true);
+	}
+
+	try {
+		srv.addToContract("Programare", "ASDASD");
+		assert(false);
+	}
+	catch (DiscNotFoundError&) {
+		assert(true);
+	}
+
+	srv.addToContract("A", "B");
+	assert(srv.getContractDisciplines().at(0).getName() == d1.getName());
+
+	try {
+		srv.addToContract("A", "B");
+		assert(false);
+	}
+	catch (DiscExistsError&) {
+		assert(true);
+	}
+
+	srv.clearContract();
+	assert(srv.getContractLength() == 0);
 
 }
 
+void testGenerateContractSrv() {
+	DisciplineRepo repo;
+	DisciplineValidator validator;
+	DisciplineService srv{ repo, validator };
+
+	Discipline d1{ "A", "B", 2, "A" };
+	Discipline d2{ "C", "D", 100, "A" };
+	Discipline d3{ "E","F", 10, "B" };
+
+	repo.addDiscipline(d1);
+	repo.addDiscipline(d2);
+	repo.addDiscipline(d3);
+
+	srv.generateContract(3);
+	assert(srv.getContractLength() == 3);
+
+	try {
+		srv.generateContract(100);
+		assert(false);
+	}
+	catch (OutOfBoundsError&) {
+		assert(true);
+	}
+
+	try {
+		srv.generateContract(-100);
+		assert(false);
+	}
+	catch (InvalidDataError&) {
+		assert(true);
+	}
+	Discipline d4{ "C", "B", 2, "A" };
+	repo.addDiscipline(d4);
+
+	srv.getUnique();
+
+	Contract contract{repo};
+	contract.add(d1.getName(), d1.getType());
+	Contract contract2{ contract };
+	assert(contract2.getAll() == contract.getAll());
+
+}
+
+void testCreateReportSrv() {
+	DisciplineRepo repo;
+	DisciplineValidator validator;
+	DisciplineService srv{ repo, validator };
+
+	Discipline d1{ "A", "B", 2, "A" };
+	Discipline d2{ "C", "B", 100, "A" };
+	Discipline d3{ "E","F", 10, "B" };
+
+	repo.addDiscipline(d1);
+	repo.addDiscipline(d2);
+	repo.addDiscipline(d3);
+
+	map<string, DisciplineCountDTO> a = srv.createReport();
+	assert(a["B"].getCount() == 2);
+	assert(a["F"].getCount() ==1);
+
+}
 
 void runTests() {
 	testAddDiscRepo();
@@ -413,4 +481,7 @@ void runTests() {
 	testValidateName();
 	testFilterDisciplines();
 	testSortDisciplines();
+	testAddToContractSrv();
+	testGenerateContractSrv();
+	 testCreateReportSrv();
 }

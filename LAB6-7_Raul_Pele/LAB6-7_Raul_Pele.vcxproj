@@ -149,6 +149,7 @@
   <ItemGroup>
     <ClCompile Include="compare.cpp" />
     <ClCompile Include="Console.cpp" />
+    <ClCompile Include="Contract.cpp" />
     <ClCompile Include="Discipline.cpp" />
     <ClCompile Include="DisciplineRepo.cpp" />
     <ClCompile Include="DisciplineService.cpp" />
@@ -159,7 +160,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Console.h" />
+    <ClInclude Include="Contract.h" />
     <ClInclude Include="Discipline.h" />
+    <ClInclude Include="DisciplineCountDTO.h" />
     <ClInclude Include="DisciplineRepo.h" />
     <ClInclude Include="DisciplineService.h" />
     <ClInclude Include="Errors.h" />

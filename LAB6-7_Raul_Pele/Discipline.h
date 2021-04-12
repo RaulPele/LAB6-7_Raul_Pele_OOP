@@ -10,9 +10,8 @@ private:
 	string teacher;
 	int hoursPerWeek;
 
-	
-
 public:
+	Discipline(): hoursPerWeek(0){}
 	Discipline(string name, string type, int hoursPerWeek, string teacher): name(name), type(type), teacher(teacher), 
 																			hoursPerWeek(hoursPerWeek){}
 	Discipline(const Discipline& discipline) {
@@ -27,6 +26,7 @@ public:
 	string getType() const;
 	string getTeacher() const;
 	int getHoursPerWeek() const;
+	string toString() const;
 	bool operator==(const Discipline& a) const;
 
 };

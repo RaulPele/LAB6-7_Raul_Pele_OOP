@@ -90,6 +90,9 @@
     <ClCompile Include="validators.cpp">
       <Filter>Source Files\Validation</Filter>
     </ClCompile>
+    <ClCompile Include="Contract.cpp">
+      <Filter>Source Files\Business</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Discipline.h">
@@ -127,6 +130,12 @@
     </ClInclude>
     <ClInclude Include="validators.h">
       <Filter>Header Files\Validation</Filter>
+    </ClInclude>
+    <ClInclude Include="Contract.h">
+      <Filter>Header Files\Business</Filter>
+    </ClInclude>
+    <ClInclude Include="DisciplineCountDTO.h">
+      <Filter>Header Files\Data</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

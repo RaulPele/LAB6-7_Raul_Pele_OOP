@@ -25,3 +25,8 @@ class InvalidDataError : public Error {
 public:
 	InvalidDataError(const string& message): Error(message){}
 };
+
+class OutOfBoundsError : public Error {
+public: 
+	OutOfBoundsError(const string& message):Error(message){}
+};
