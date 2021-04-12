@@ -1,4 +1,15 @@
-﻿  tests.cpp
+﻿  Console.cpp
+  Contract.cpp
+  Discipline.cpp
+  DisciplineRepo.cpp
+  DisciplineService.cpp
+  compare.cpp
+  main.cpp
+  tests.cpp
+  validators.cpp
+  Running Code Analysis for C/C++...
+  Generating Code...
+  LINK : C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\Debug\LAB6-7_Raul_Pele.exe not found or not built by the last incremental link; performing full link
   LAB6-7_Raul_Pele.vcxproj -> C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\Debug\LAB6-7_Raul_Pele.exe
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Discipline.h(14): warning C26455: Default constructor may not throw. Declare it 'noexcept' (f.6).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Discipline.h(17): warning C26432: If you define or delete any default operation in the type 'class Discipline', define or delete them all (c.21).
