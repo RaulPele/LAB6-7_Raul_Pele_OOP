@@ -1,4 +1,7 @@
-﻿  main.cpp
+﻿  Console.cpp
+  main.cpp
+  Running Code Analysis for C/C++...
+  Generating Code...
   LAB6-7_Raul_Pele.vcxproj -> C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\Debug\LAB6-7_Raul_Pele.exe
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\Discipline.h(18): warning C26432: If you define or delete any default operation in the type 'class Discipline', define or delete them all (c.21).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\DisciplineService.h(17): warning C26440: Function 'DisciplineService::DisciplineService' can be declared 'noexcept' (f.6).
@@ -22,7 +25,6 @@ C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\L
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LinkedList.h(123): warning C6011: Dereferencing NULL pointer 'current'. See line 119 for an earlier location where this can occur
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LinkedList.h(37): warning C26432: If you define or delete any default operation in the type 'class LinkedList<class Discipline>', define or delete them all (c.21).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\LinkedList.h(150): warning C26429: Symbol 'cmp' is never tested for nullness, it can be marked as not_null (f.23).
-C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\main.cpp(14): warning C26496: The variable 'console' is assigned only once, mark it as const (con.4).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\tests.cpp(208): warning C26496: The variable 'it' is assigned only once, mark it as const (con.4).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\tests.cpp(213): warning C26496: The variable 'it2' is assigned only once, mark it as const (con.4).
 C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\tests.cpp(218): warning C26496: The variable 'it3' is assigned only once, mark it as const (con.4).

@@ -14,7 +14,7 @@ int main() {
 	Console console{ discSrv };
 
 	runTests();
-	//console.run();
+	console.run();
 	}
 	_CrtDumpMemoryLeaks();
 	return 0;

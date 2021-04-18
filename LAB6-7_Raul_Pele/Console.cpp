@@ -39,7 +39,7 @@ bool validateIntStr(const string& hoursStr) {
 	return true;
 }
 
-void Console::addDiscipline() {
+void Console::addDiscipline(){
 	string name, type, teacher, hrsStr;
 	int hoursPerWeek=0;
 
