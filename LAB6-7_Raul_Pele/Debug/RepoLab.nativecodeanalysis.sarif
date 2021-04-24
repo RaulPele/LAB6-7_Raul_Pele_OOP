@@ -1,0 +1,458 @@
+{
+  "version": "2.1.0",
+  "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+  "runs": [
+    {
+      "results": [
+        {
+          "ruleId": "C26455",
+          "message": {
+            "text": "Default constructor may not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/Discipline.h"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 2,
+                  "endLine": 14,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Discipline@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class Discipline', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/Discipline.h"
+                },
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 2,
+                  "endLine": 17,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Discipline@@QAE@ABV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26440",
+          "message": {
+            "text": "Function 'Error::getMessage' can be declared 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/Errors.h"
+                },
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 16,
+                  "endLine": 11,
+                  "endColumn": 16
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?getMessage@Error@@QAEABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26433",
+          "message": {
+            "text": "Function 'RepoLab::getAll' should be marked with 'override' (c.128)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/RepoLab.cpp"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 35,
+                  "endLine": 8,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?getAll@RepoLab@@UBE?BV?$vector@VDiscipline@@V?$allocator@VDiscipline@@@std@@@std@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26436",
+          "message": {
+            "text": "The type 'mod_const(class RepoLab)' with a virtual function needs either public virtual or protected non-virtual destructor (c.35)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/RepoLab.cpp"
+                },
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 35,
+                  "endLine": 8,
+                  "endColumn": 35
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?getAll@RepoLab@@UBE?BV?$vector@VDiscipline@@V?$allocator@VDiscipline@@@std@@@std@@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'r' is assigned only once, mark it as const (con.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/RepoLab.cpp"
+                },
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 8,
+                  "endLine": 23,
+                  "endColumn": 64
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?findDiscipline@RepoLab@@UBEABVDiscipline@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26433",
+          "message": {
+            "text": "Function 'RepoLab::findDiscipline' should be marked with 'override' (c.128)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/RepoLab.cpp"
+                },
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 28,
+                  "endLine": 16,
+                  "endColumn": 28
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?findDiscipline@RepoLab@@UBEABVDiscipline@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'r' is assigned only once, mark it as const (con.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/RepoLab.cpp"
+                },
+                "region": {
+                  "startLine": 40,
+                  "startColumn": 8,
+                  "endLine": 40,
+                  "endColumn": 64
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?exists@RepoLab@@UBE_NABVDiscipline@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26433",
+          "message": {
+            "text": "Function 'RepoLab::exists' should be marked with 'override' (c.128)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/RepoLab.cpp"
+                },
+                "region": {
+                  "startLine": 39,
+                  "startColumn": 15,
+                  "endLine": 39,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?exists@RepoLab@@UBE_NABVDiscipline@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'r' is assigned only once, mark it as const (con.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/RepoLab.cpp"
+                },
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 8,
+                  "endLine": 55,
+                  "endColumn": 64
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?addDiscipline@RepoLab@@UAEXABVDiscipline@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26433",
+          "message": {
+            "text": "Function 'RepoLab::addDiscipline' should be marked with 'override' (c.128)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/RepoLab.cpp"
+                },
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 15,
+                  "endLine": 54,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?addDiscipline@RepoLab@@UAEXABVDiscipline@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26436",
+          "message": {
+            "text": "The type 'class RepoLab' with a virtual function needs either public virtual or protected non-virtual destructor (c.35)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/RepoLab.cpp"
+                },
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 15,
+                  "endLine": 54,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?addDiscipline@RepoLab@@UAEXABVDiscipline@@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26496",
+          "message": {
+            "text": "The variable 'r' is assigned only once, mark it as const (con.4)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/RepoLab.cpp"
+                },
+                "region": {
+                  "startLine": 68,
+                  "startColumn": 8,
+                  "endLine": 68,
+                  "endColumn": 64
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?removeDiscipline@RepoLab@@UAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26433",
+          "message": {
+            "text": "Function 'RepoLab::removeDiscipline' should be marked with 'override' (c.128)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/RepoLab.cpp"
+                },
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 15,
+                  "endLine": 67,
+                  "endColumn": 15
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "?removeDiscipline@RepoLab@@UAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        }
+      ],
+      "tool": {
+        "driver": {
+          "name": "PREfast",
+          "fullName": "PREfast Code Analysis",
+          "version": "14.28.29337.0"
+        }
+      },
+      "invocations": [
+        {
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0029B1D0 -il C:\\Users\\raulp\\AppData\\Local\\Temp\\_CL_2a848320ast -typedil -f RepoLab.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829337 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -nologo -W 4 -WX -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -FoDebug\\RepoLab.obj -FdDebug\\vc142.pdb -Gd -analyze:projectdirectory C:\\Users\\raulp\\Documents\\Facultate\\Programare orientata pe obiecte\\Laboratoare\\LAB6-7_Raul_Pele\\LAB6-7_Raul_Pele -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset ruleset.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "executionSuccessful": true
+        }
+      ],
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/Discipline.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/Errors.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/RepoLab.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/raulp/documents/facultate/programare orientata pe obiecte/laboratoare/lab6-7_raul_pele/lab6-7_raul_pele/repolab.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/raulp/documents/facultate/programare orientata pe obiecte/laboratoare/lab6-7_raul_pele/lab6-7_raul_pele/repo.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -2,27 +2,105 @@
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>Discipline.h</FILENAME>
-      <LINE>18</LINE>
+      <LINE>14</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Discipline::{ctor}</FUNCTION>
+    <DECORATED>??0Discipline@@QAE@XZ</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Discipline.h</FILENAME>
+      <LINE>17</LINE>
       <COLUMN>1</COLUMN>
     </SFA>
     <DEFECTCODE>26432</DEFECTCODE>
     <DESCRIPTION>If you define or delete any default operation in the type 'class Discipline', define or delete them all (c.21).</DESCRIPTION>
     <FUNCTION>Discipline::{ctor}</FUNCTION>
     <DECORATED>??0Discipline@@QAE@ABV0@@Z</DECORATED>
-    <FUNCLINE>18</FUNCLINE>
+    <FUNCLINE>17</FUNCLINE>
     <PATH></PATH>
   </DEFECT><DEFECT>
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
-      <FILENAME>DisciplineService.h</FILENAME>
-      <LINE>17</LINE>
+      <FILENAME>DisciplineRepo.h</FILENAME>
+      <LINE>51</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class DisciplineRepo', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>DisciplineRepo::{dtor}</FUNCTION>
+    <DECORATED>??1DisciplineRepo@@UAE@XZ</DECORATED>
+    <FUNCLINE>51</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Contract.h</FILENAME>
+      <LINE>16</LINE>
       <COLUMN>1</COLUMN>
     </SFA>
     <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'DisciplineService::DisciplineService' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>DisciplineService::{ctor}</FUNCTION>
-    <DECORATED>??0DisciplineService@@QAE@AAVDisciplineRepo@@ABVDisciplineValidator@@@Z</DECORATED>
+    <DESCRIPTION>Function 'Contract::Contract' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Contract::{ctor}</FUNCTION>
+    <DECORATED>??0Contract@@QAE@AAVRepo@@@Z</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineCountDTO.h</FILENAME>
+      <LINE>13</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'DisciplineCountDTO::getCount' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>DisciplineCountDTO::getCount</FUNCTION>
+    <DECORATED>?getCount@DisciplineCountDTO@@QAEHXZ</DECORATED>
+    <FUNCLINE>13</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineCountDTO.h</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'DisciplineCountDTO::setCount' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>DisciplineCountDTO::setCount</FUNCTION>
+    <DECORATED>?setCount@DisciplineCountDTO@@QAEXH@Z</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineCountDTO.h</FILENAME>
+      <LINE>17</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>DisciplineCountDTO::{ctor}</FUNCTION>
+    <DECORATED>??0DisciplineCountDTO@@QAE@XZ</DECORATED>
     <FUNCLINE>17</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>UndoAction.h</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class UndoAction', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>UndoAction::{dtor}</FUNCTION>
+    <DECORATED>??1UndoAction@@UAE@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
     <PATH></PATH>
   </DEFECT><DEFECT>
     <SFA>
@@ -49,6 +127,581 @@
     <FUNCTION>validateIntStr</FUNCTION>
     <DECORATED>?validateIntStr@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z</DECORATED>
     <FUNCLINE>30</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Contract.cpp</FILENAME>
+      <LINE>7</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class Contract', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>Contract::{ctor}</FUNCTION>
+    <DECORATED>??0Contract@@QAE@ABV0@@Z</DECORATED>
+    <FUNCLINE>7</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Contract.cpp</FILENAME>
+      <LINE>32</LINE>
+      <COLUMN>15</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Contract::clear' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Contract::clear</FUNCTION>
+    <DECORATED>?clear@Contract@@QAEXXZ</DECORATED>
+    <FUNCLINE>32</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Contract.cpp</FILENAME>
+      <LINE>36</LINE>
+      <COLUMN>30</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Contract::getAll' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Contract::getAll</FUNCTION>
+    <DECORATED>?getAll@Contract@@QAEAAV?$vector@VDiscipline@@V?$allocator@VDiscipline@@@std@@@std@@XZ</DECORATED>
+    <FUNCLINE>36</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Discipline.cpp</FILENAME>
+      <LINE>15</LINE>
+      <COLUMN>16</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Discipline::getHoursPerWeek' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Discipline::getHoursPerWeek</FUNCTION>
+    <DECORATED>?getHoursPerWeek@Discipline@@QBEHXZ</DECORATED>
+    <FUNCLINE>15</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Discipline.cpp</FILENAME>
+      <LINE>19</LINE>
+      <COLUMN>17</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Discipline::operator==' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Discipline::==</FUNCTION>
+    <DECORATED>??8Discipline@@QBE_NABV0@@Z</DECORATED>
+    <FUNCLINE>19</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineFileRepo.h</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class DisciplineFileRepo', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>DisciplineFileRepo::{dtor}</FUNCTION>
+    <DECORATED>??1DisciplineFileRepo@@UAE@XZ</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineFileRepo.cpp</FILENAME>
+      <LINE>23</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>26494</DEFECTCODE>
+    <DESCRIPTION>Variable 'hoursPerWeek' is uninitialized. Always initialize an object (type.5).</DESCRIPTION>
+    <FUNCTION>DisciplineFileRepo::loadFromFile</FUNCTION>
+    <DECORATED>?loadFromFile@DisciplineFileRepo@@AAEXXZ</DECORATED>
+    <FUNCLINE>10</FUNCLINE>
+    <ADDITIONALINFO>
+      <targetSymbol>hoursPerWeek</targetSymbol>
+    </ADDITIONALINFO>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineRepo.cpp</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>41</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'DisciplineRepo::getAll' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>DisciplineRepo::getAll</FUNCTION>
+    <DECORATED>?getAll@DisciplineRepo@@UBE?BV?$vector@VDiscipline@@V?$allocator@VDiscipline@@@std@@@std@@XZ</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineRepo.cpp</FILENAME>
+      <LINE>12</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'DisciplineRepo::findDiscipline' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>DisciplineRepo::findDiscipline</FUNCTION>
+    <DECORATED>?findDiscipline@DisciplineRepo@@UBEABVDiscipline@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineRepo.cpp</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>21</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'DisciplineRepo::exists' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>DisciplineRepo::exists</FUNCTION>
+    <DECORATED>?exists@DisciplineRepo@@UBE_NABVDiscipline@@@Z</DECORATED>
+    <FUNCLINE>25</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineRepo.cpp</FILENAME>
+      <LINE>35</LINE>
+      <COLUMN>21</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'DisciplineRepo::addDiscipline' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>DisciplineRepo::addDiscipline</FUNCTION>
+    <DECORATED>?addDiscipline@DisciplineRepo@@UAEXABVDiscipline@@@Z</DECORATED>
+    <FUNCLINE>35</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineRepo.cpp</FILENAME>
+      <LINE>43</LINE>
+      <COLUMN>21</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'DisciplineRepo::removeDiscipline' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>DisciplineRepo::removeDiscipline</FUNCTION>
+    <DECORATED>?removeDiscipline@DisciplineRepo@@UAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z</DECORATED>
+    <FUNCLINE>43</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>UndoAdd.h</FILENAME>
+      <LINE>15</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class UndoAdd', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>UndoAdd::{dtor}</FUNCTION>
+    <DECORATED>??1UndoAdd@@UAE@XZ</DECORATED>
+    <FUNCLINE>15</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>UndoRemove.h</FILENAME>
+      <LINE>15</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class UndoRemove', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>UndoRemove::{dtor}</FUNCTION>
+    <DECORATED>??1UndoRemove@@UAE@XZ</DECORATED>
+    <FUNCLINE>15</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>UndoModify.h</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class UndoModify', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>UndoModify::{dtor}</FUNCTION>
+    <DECORATED>??1UndoModify@@UAE@XZ</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>33</LINE>
+      <COLUMN>30</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>DisciplineService::addDiscipline</FUNCTION>
+    <DECORATED>?addDiscipline@DisciplineService@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H0@Z</DECORATED>
+    <FUNCLINE>20</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>33</LINE>
+      <COLUMN>30</COLUMN>
+    </SFA>
+    <DEFECTCODE>26400</DEFECTCODE>
+    <DESCRIPTION>Do not assign the result of an allocation or a function call with an owner&lt;T&gt; return value to a raw pointer, use owner&lt;T&gt; instead (i.11).</DESCRIPTION>
+    <FUNCTION>DisciplineService::addDiscipline</FUNCTION>
+    <DECORATED>?addDiscipline@DisciplineService@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H0@Z</DECORATED>
+    <FUNCLINE>20</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>47</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>DisciplineService::removeDiscipline</FUNCTION>
+    <DECORATED>?removeDiscipline@DisciplineService@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z</DECORATED>
+    <FUNCLINE>37</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>47</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26400</DEFECTCODE>
+    <DESCRIPTION>Do not assign the result of an allocation or a function call with an owner&lt;T&gt; return value to a raw pointer, use owner&lt;T&gt; instead (i.11).</DESCRIPTION>
+    <FUNCTION>DisciplineService::removeDiscipline</FUNCTION>
+    <DECORATED>?removeDiscipline@DisciplineService@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z</DECORATED>
+    <FUNCLINE>37</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>DisciplineService::modifyDiscipline</FUNCTION>
+    <DECORATED>?modifyDiscipline@DisciplineService@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0AAV23@1H1@Z</DECORATED>
+    <FUNCLINE>66</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26400</DEFECTCODE>
+    <DESCRIPTION>Do not assign the result of an allocation or a function call with an owner&lt;T&gt; return value to a raw pointer, use owner&lt;T&gt; instead (i.11).</DESCRIPTION>
+    <FUNCTION>DisciplineService::modifyDiscipline</FUNCTION>
+    <DECORATED>?modifyDiscipline@DisciplineService@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0AAV23@1H1@Z</DECORATED>
+    <FUNCLINE>66</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>227</LINE>
+      <COLUMN>29</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'dist' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>DisciplineService::generateContract</FUNCTION>
+    <DECORATED>?generateContract@DisciplineService@@QAEXH@Z</DECORATED>
+    <FUNCLINE>207</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>228</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'nr' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>DisciplineService::generateContract</FUNCTION>
+    <DECORATED>?generateContract@DisciplineService@@QAEXH@Z</DECORATED>
+    <FUNCLINE>207</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>215</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>DisciplineService::generateContract</FUNCTION>
+    <DECORATED>?generateContract@DisciplineService@@QAEXH@Z</DECORATED>
+    <FUNCLINE>207</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>283</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26429</DEFECTCODE>
+    <DESCRIPTION>Symbol 'act' is never tested for nullness, it can be marked as not_null (f.23).</DESCRIPTION>
+    <FUNCTION>DisciplineService::undo</FUNCTION>
+    <DECORATED>?undo@DisciplineService@@QAEXXZ</DECORATED>
+    <FUNCLINE>278</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>290</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class DisciplineService', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>DisciplineService::{dtor}</FUNCTION>
+    <DECORATED>??1DisciplineService@@QAE@XZ</DECORATED>
+    <FUNCLINE>290</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'p' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>main.cpp</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>12</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>main</FUNCTION>
+    <DECORATED>main</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>RepoLab.cpp</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'RepoLab::getAll' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>RepoLab::getAll</FUNCTION>
+    <DECORATED>?getAll@RepoLab@@UBE?BV?$vector@VDiscipline@@V?$allocator@VDiscipline@@@std@@@std@@XZ</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>RepoLab.cpp</FILENAME>
+      <LINE>8</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26436</DEFECTCODE>
+    <DESCRIPTION>The type 'mod_const(class RepoLab)' with a virtual function needs either public virtual or protected non-virtual destructor (c.35).</DESCRIPTION>
+    <FUNCTION>RepoLab::getAll</FUNCTION>
+    <DECORATED>?getAll@RepoLab@@UBE?BV?$vector@VDiscipline@@V?$allocator@VDiscipline@@@std@@@std@@XZ</DECORATED>
+    <FUNCLINE>8</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>RepoLab.cpp</FILENAME>
+      <LINE>23</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'r' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>RepoLab::findDiscipline</FUNCTION>
+    <DECORATED>?findDiscipline@RepoLab@@UBEABVDiscipline@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>RepoLab.cpp</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'RepoLab::findDiscipline' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>RepoLab::findDiscipline</FUNCTION>
+    <DECORATED>?findDiscipline@RepoLab@@UBEABVDiscipline@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>RepoLab.cpp</FILENAME>
+      <LINE>40</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'r' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>RepoLab::exists</FUNCTION>
+    <DECORATED>?exists@RepoLab@@UBE_NABVDiscipline@@@Z</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>RepoLab.cpp</FILENAME>
+      <LINE>39</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'RepoLab::exists' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>RepoLab::exists</FUNCTION>
+    <DECORATED>?exists@RepoLab@@UBE_NABVDiscipline@@@Z</DECORATED>
+    <FUNCLINE>39</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>RepoLab.cpp</FILENAME>
+      <LINE>55</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'r' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>RepoLab::addDiscipline</FUNCTION>
+    <DECORATED>?addDiscipline@RepoLab@@UAEXABVDiscipline@@@Z</DECORATED>
+    <FUNCLINE>54</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>RepoLab.cpp</FILENAME>
+      <LINE>54</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'RepoLab::addDiscipline' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>RepoLab::addDiscipline</FUNCTION>
+    <DECORATED>?addDiscipline@RepoLab@@UAEXABVDiscipline@@@Z</DECORATED>
+    <FUNCLINE>54</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>RepoLab.cpp</FILENAME>
+      <LINE>54</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26436</DEFECTCODE>
+    <DESCRIPTION>The type 'class RepoLab' with a virtual function needs either public virtual or protected non-virtual destructor (c.35).</DESCRIPTION>
+    <FUNCTION>RepoLab::addDiscipline</FUNCTION>
+    <DECORATED>?addDiscipline@RepoLab@@UAEXABVDiscipline@@@Z</DECORATED>
+    <FUNCLINE>54</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>RepoLab.cpp</FILENAME>
+      <LINE>68</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'r' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>RepoLab::removeDiscipline</FUNCTION>
+    <DECORATED>?removeDiscipline@RepoLab@@UAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z</DECORATED>
+    <FUNCLINE>67</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>RepoLab.cpp</FILENAME>
+      <LINE>67</LINE>
+      <COLUMN>14</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'RepoLab::removeDiscipline' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>RepoLab::removeDiscipline</FUNCTION>
+    <DECORATED>?removeDiscipline@RepoLab@@UAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z</DECORATED>
+    <FUNCLINE>67</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>tests.cpp</FILENAME>
+      <LINE>498</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'newHrs' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>testUndo</FUNCTION>
+    <DECORATED>?testUndo@@YAXXZ</DECORATED>
+    <FUNCLINE>493</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>tests.cpp</FILENAME>
+      <LINE>520</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'p' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>testAddRepoLab</FUNCTION>
+    <DECORATED>?testAddRepoLab@@YAXXZ</DECORATED>
+    <FUNCLINE>519</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>tests.cpp</FILENAME>
+      <LINE>520</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>testAddRepoLab</FUNCTION>
+    <DECORATED>?testAddRepoLab@@YAXXZ</DECORATED>
+    <FUNCLINE>519</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>tests.cpp</FILENAME>
+      <LINE>554</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>26496</DEFECTCODE>
+    <DESCRIPTION>The variable 'p' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>testRemoveRepoLab</FUNCTION>
+    <DECORATED>?testRemoveRepoLab@@YAXXZ</DECORATED>
+    <FUNCLINE>553</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>tests.cpp</FILENAME>
+      <LINE>554</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>testRemoveRepoLab</FUNCTION>
+    <DECORATED>?testRemoveRepoLab@@YAXXZ</DECORATED>
+    <FUNCLINE>553</FUNCLINE>
     <PATH></PATH>
   </DEFECT><DEFECT>
     <SFA>
@@ -93,58 +746,6 @@
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>LinkedList.h</FILENAME>
-      <LINE>63</LINE>
-      <COLUMN>27</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'LinkedList&lt;Discipline&gt;::empty' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>LinkedList&lt;Discipline&gt;::empty</FUNCTION>
-    <DECORATED>?empty@?$LinkedList@VDiscipline@@@@QBE_NXZ</DECORATED>
-    <FUNCLINE>63</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
-      <FILENAME>LIIterator.h</FILENAME>
-      <LINE>58</LINE>
-      <COLUMN>27</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'LIIterator&lt;Discipline&gt;::operator!=' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>LIIterator&lt;Discipline&gt;::!=</FUNCTION>
-    <DECORATED>??9?$LIIterator@VDiscipline@@@@QAE_NABV0@@Z</DECORATED>
-    <FUNCLINE>58</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
-      <FILENAME>LIIterator.h</FILENAME>
-      <LINE>17</LINE>
-      <COLUMN>1</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'LIIterator&lt;Discipline&gt;::LIIterator&lt;Discipline&gt;' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>LIIterator&lt;Discipline&gt;::{ctor}</FUNCTION>
-    <DECORATED>??0?$LIIterator@VDiscipline@@@@QAE@ABV?$LinkedList@VDiscipline@@@@@Z</DECORATED>
-    <FUNCLINE>17</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
-      <FILENAME>LinkedList.h</FILENAME>
-      <LINE>174</LINE>
-      <COLUMN>27</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'LinkedList&lt;Discipline&gt;::destroyList' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>LinkedList&lt;Discipline&gt;::destroyList</FUNCTION>
-    <DECORATED>?destroyList@?$LinkedList@VDiscipline@@@@AAEXPAV?$Node@VDiscipline@@@@@Z</DECORATED>
-    <FUNCLINE>174</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
-      <FILENAME>LinkedList.h</FILENAME>
       <LINE>87</LINE>
       <COLUMN>45</COLUMN>
     </SFA>
@@ -166,84 +767,6 @@
     <FUNCTION>LinkedList&lt;Discipline&gt;::add</FUNCTION>
     <DECORATED>?add@?$LinkedList@VDiscipline@@@@QAEXABVDiscipline@@@Z</DECORATED>
     <FUNCLINE>86</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
-      <FILENAME>Node.h</FILENAME>
-      <LINE>18</LINE>
-      <COLUMN>26</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'Node&lt;Discipline&gt;::getData' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>Node&lt;Discipline&gt;::getData</FUNCTION>
-    <DECORATED>?getData@?$Node@VDiscipline@@@@QAEAAVDiscipline@@XZ</DECORATED>
-    <FUNCLINE>18</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
-      <FILENAME>LIIterator.h</FILENAME>
-      <LINE>32</LINE>
-      <COLUMN>27</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'LIIterator&lt;Discipline&gt;::next' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>LIIterator&lt;Discipline&gt;::next</FUNCTION>
-    <DECORATED>?next@?$LIIterator@VDiscipline@@@@QAEXXZ</DECORATED>
-    <FUNCLINE>32</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
-      <FILENAME>LIIterator.h</FILENAME>
-      <LINE>37</LINE>
-      <COLUMN>27</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'LIIterator&lt;Discipline&gt;::valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>LIIterator&lt;Discipline&gt;::valid</FUNCTION>
-    <DECORATED>?valid@?$LIIterator@VDiscipline@@@@QBE_NXZ</DECORATED>
-    <FUNCLINE>37</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
-      <FILENAME>Discipline.cpp</FILENAME>
-      <LINE>15</LINE>
-      <COLUMN>16</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'Discipline::getHoursPerWeek' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>Discipline::getHoursPerWeek</FUNCTION>
-    <DECORATED>?getHoursPerWeek@Discipline@@QBEHXZ</DECORATED>
-    <FUNCLINE>15</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
-      <FILENAME>Discipline.cpp</FILENAME>
-      <LINE>19</LINE>
-      <COLUMN>17</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'Discipline::operator==' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>Discipline::==</FUNCTION>
-    <DECORATED>??8Discipline@@QBE_NABV0@@Z</DECORATED>
-    <FUNCLINE>19</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
-      <FILENAME>DisciplineRepo.cpp</FILENAME>
-      <LINE>7</LINE>
-      <COLUMN>46</COLUMN>
-    </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'DisciplineRepo::getAll' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>DisciplineRepo::getAll</FUNCTION>
-    <DECORATED>?getAll@DisciplineRepo@@QBEABV?$LinkedList@VDiscipline@@@@XZ</DECORATED>
-    <FUNCLINE>7</FUNCLINE>
     <PATH></PATH>
   </DEFECT><DEFECT>
     <SFA>
@@ -310,79 +833,79 @@
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>LinkedList.h</FILENAME>
-      <LINE>37</LINE>
-      <COLUMN>22</COLUMN>
+      <LINE>63</LINE>
+      <COLUMN>27</COLUMN>
     </SFA>
-    <DEFECTCODE>26432</DEFECTCODE>
-    <DESCRIPTION>If you define or delete any default operation in the type 'class LinkedList&lt;class Discipline&gt;', define or delete them all (c.21).</DESCRIPTION>
-    <FUNCTION>LinkedList&lt;Discipline&gt;::{ctor}</FUNCTION>
-    <DECORATED>??0?$LinkedList@VDiscipline@@@@QAE@ABV0@@Z</DECORATED>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'LinkedList&lt;Discipline&gt;::empty' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>LinkedList&lt;Discipline&gt;::empty</FUNCTION>
+    <DECORATED>?empty@?$LinkedList@VDiscipline@@@@QBE_NXZ</DECORATED>
+    <FUNCLINE>63</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LIIterator.h</FILENAME>
+      <LINE>32</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'LIIterator&lt;Discipline&gt;::next' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>LIIterator&lt;Discipline&gt;::next</FUNCTION>
+    <DECORATED>?next@?$LIIterator@VDiscipline@@@@QAEXXZ</DECORATED>
+    <FUNCLINE>32</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LIIterator.h</FILENAME>
+      <LINE>37</LINE>
+      <COLUMN>27</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'LIIterator&lt;Discipline&gt;::valid' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>LIIterator&lt;Discipline&gt;::valid</FUNCTION>
+    <DECORATED>?valid@?$LIIterator@VDiscipline@@@@QBE_NXZ</DECORATED>
     <FUNCLINE>37</FUNCLINE>
     <PATH></PATH>
   </DEFECT><DEFECT>
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>LIIterator.h</FILENAME>
+      <LINE>17</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'LIIterator&lt;Discipline&gt;::LIIterator&lt;Discipline&gt;' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>LIIterator&lt;Discipline&gt;::{ctor}</FUNCTION>
+    <DECORATED>??0?$LIIterator@VDiscipline@@@@QAE@ABV?$LinkedList@VDiscipline@@@@@Z</DECORATED>
+    <FUNCLINE>17</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>LinkedList.h</FILENAME>
-      <LINE>150</LINE>
+      <LINE>174</LINE>
       <COLUMN>27</COLUMN>
     </SFA>
-    <DEFECTCODE>26429</DEFECTCODE>
-    <DESCRIPTION>Symbol 'cmp' is never tested for nullness, it can be marked as not_null (f.23).</DESCRIPTION>
-    <FUNCTION>LinkedList&lt;Discipline&gt;::sort</FUNCTION>
-    <DECORATED>?sort@?$LinkedList@VDiscipline@@@@QAEXP6A_NABVDiscipline@@0@Z_N@Z</DECORATED>
-    <FUNCLINE>150</FUNCLINE>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'LinkedList&lt;Discipline&gt;::destroyList' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>LinkedList&lt;Discipline&gt;::destroyList</FUNCTION>
+    <DECORATED>?destroyList@?$LinkedList@VDiscipline@@@@AAEXPAV?$Node@VDiscipline@@@@@Z</DECORATED>
+    <FUNCLINE>174</FUNCLINE>
     <PATH></PATH>
   </DEFECT><DEFECT>
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
-      <FILENAME>tests.cpp</FILENAME>
-      <LINE>208</LINE>
-      <COLUMN>24</COLUMN>
+      <FILENAME>Node.h</FILENAME>
+      <LINE>18</LINE>
+      <COLUMN>26</COLUMN>
     </SFA>
-    <DEFECTCODE>26496</DEFECTCODE>
-    <DESCRIPTION>The variable 'it' is assigned only once, mark it as const (con.4).</DESCRIPTION>
-    <FUNCTION>testModifyDiscSrv</FUNCTION>
-    <DECORATED>?testModifyDiscSrv@@YAXXZ</DECORATED>
-    <FUNCLINE>199</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
-      <FILENAME>tests.cpp</FILENAME>
-      <LINE>213</LINE>
-      <COLUMN>24</COLUMN>
-    </SFA>
-    <DEFECTCODE>26496</DEFECTCODE>
-    <DESCRIPTION>The variable 'it2' is assigned only once, mark it as const (con.4).</DESCRIPTION>
-    <FUNCTION>testModifyDiscSrv</FUNCTION>
-    <DECORATED>?testModifyDiscSrv@@YAXXZ</DECORATED>
-    <FUNCLINE>199</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
-      <FILENAME>tests.cpp</FILENAME>
-      <LINE>218</LINE>
-      <COLUMN>24</COLUMN>
-    </SFA>
-    <DEFECTCODE>26496</DEFECTCODE>
-    <DESCRIPTION>The variable 'it3' is assigned only once, mark it as const (con.4).</DESCRIPTION>
-    <FUNCTION>testModifyDiscSrv</FUNCTION>
-    <DECORATED>?testModifyDiscSrv@@YAXXZ</DECORATED>
-    <FUNCLINE>199</FUNCLINE>
-    <PATH></PATH>
-  </DEFECT><DEFECT>
-    <SFA>
-      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
-      <FILENAME>tests.cpp</FILENAME>
-      <LINE>223</LINE>
-      <COLUMN>24</COLUMN>
-    </SFA>
-    <DEFECTCODE>26496</DEFECTCODE>
-    <DESCRIPTION>The variable 'it4' is assigned only once, mark it as const (con.4).</DESCRIPTION>
-    <FUNCTION>testModifyDiscSrv</FUNCTION>
-    <DECORATED>?testModifyDiscSrv@@YAXXZ</DECORATED>
-    <FUNCLINE>199</FUNCLINE>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'Node&lt;Discipline&gt;::getData' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Node&lt;Discipline&gt;::getData</FUNCTION>
+    <DECORATED>?getData@?$Node@VDiscipline@@@@QAEAAVDiscipline@@XZ</DECORATED>
+    <FUNCLINE>18</FUNCLINE>
     <PATH></PATH>
   </DEFECT><DEFECT>
     <SFA>

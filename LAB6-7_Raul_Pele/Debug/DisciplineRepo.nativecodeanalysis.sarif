@@ -5,6 +5,34 @@
     {
       "results": [
         {
+          "ruleId": "C26455",
+          "message": {
+            "text": "Default constructor may not throw. Declare it 'noexcept' (f.6)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/Discipline.h"
+                },
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 2,
+                  "endLine": 14,
+                  "endColumn": 2
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??0Discipline@@QAE@XZ",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
           "ruleId": "C26432",
           "message": {
             "text": "If you define or delete any default operation in the type 'class Discipline', define or delete them all (c.21)."
@@ -16,15 +44,43 @@
                   "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/Discipline.h"
                 },
                 "region": {
-                  "startLine": 18,
+                  "startLine": 17,
                   "startColumn": 2,
-                  "endLine": 18,
+                  "endLine": 17,
                   "endColumn": 2
                 }
               },
               "logicalLocations": [
                 {
                   "decoratedName": "??0Discipline@@QAE@ABV0@@Z",
+                  "kind": "function"
+                }
+              ]
+            }
+          ],
+          "suppressions": []
+        },
+        {
+          "ruleId": "C26432",
+          "message": {
+            "text": "If you define or delete any default operation in the type 'class DisciplineRepo', define or delete them all (c.21)."
+          },
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/DisciplineRepo.h"
+                },
+                "region": {
+                  "startLine": 51,
+                  "startColumn": 11,
+                  "endLine": 51,
+                  "endColumn": 11
+                }
+              },
+              "logicalLocations": [
+                {
+                  "decoratedName": "??1DisciplineRepo@@UAE@XZ",
                   "kind": "function"
                 }
               ]
@@ -61,9 +117,9 @@
           "suppressions": []
         },
         {
-          "ruleId": "C26440",
+          "ruleId": "C26433",
           "message": {
-            "text": "Function 'DisciplineRepo::getAll' can be declared 'noexcept' (f.6)."
+            "text": "Function 'DisciplineRepo::getAll' should be marked with 'override' (c.128)."
           },
           "locations": [
             {
@@ -72,15 +128,15 @@
                   "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/DisciplineRepo.cpp"
                 },
                 "region": {
-                  "startLine": 7,
-                  "startColumn": 47,
-                  "endLine": 7,
-                  "endColumn": 47
+                  "startLine": 8,
+                  "startColumn": 42,
+                  "endLine": 8,
+                  "endColumn": 42
                 }
               },
               "logicalLocations": [
                 {
-                  "decoratedName": "?getAll@DisciplineRepo@@QBEABV?$LinkedList@VDiscipline@@@@XZ",
+                  "decoratedName": "?getAll@DisciplineRepo@@UBE?BV?$vector@VDiscipline@@V?$allocator@VDiscipline@@@std@@@std@@XZ",
                   "kind": "function"
                 }
               ]
@@ -89,24 +145,26 @@
           "suppressions": []
         },
         {
-          "ruleId": "C26409",
+          "ruleId": "C26433",
           "message": {
-            "text": "Avoid calling new and delete explicitly, use std::make_unique<T> instead (r.11)."
+            "text": "Function 'DisciplineRepo::findDiscipline' should be marked with 'override' (c.128)."
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/LinkedList.h"
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/DisciplineRepo.cpp"
                 },
                 "region": {
-                  "startLine": 87,
-                  "startColumn": 46
+                  "startLine": 12,
+                  "startColumn": 35,
+                  "endLine": 12,
+                  "endColumn": 35
                 }
               },
               "logicalLocations": [
                 {
-                  "decoratedName": "?add@?$LinkedList@VDiscipline@@@@QAEXABVDiscipline@@@Z",
+                  "decoratedName": "?findDiscipline@DisciplineRepo@@UBEABVDiscipline@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z",
                   "kind": "function"
                 }
               ]
@@ -115,26 +173,26 @@
           "suppressions": []
         },
         {
-          "ruleId": "C26400",
+          "ruleId": "C26433",
           "message": {
-            "text": "Do not assign the result of an allocation or a function call with an owner<T> return value to a raw pointer, use owner<T> instead (i.11)."
+            "text": "Function 'DisciplineRepo::exists' should be marked with 'override' (c.128)."
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/LinkedList.h"
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/DisciplineRepo.cpp"
                 },
                 "region": {
-                  "startLine": 87,
-                  "startColumn": 46,
-                  "endLine": 87,
-                  "endColumn": 54
+                  "startLine": 25,
+                  "startColumn": 22,
+                  "endLine": 25,
+                  "endColumn": 22
                 }
               },
               "logicalLocations": [
                 {
-                  "decoratedName": "?add@?$LinkedList@VDiscipline@@@@QAEXABVDiscipline@@@Z",
+                  "decoratedName": "?exists@DisciplineRepo@@UBE_NABVDiscipline@@@Z",
                   "kind": "function"
                 }
               ]
@@ -143,151 +201,26 @@
           "suppressions": []
         },
         {
-          "ruleId": "C6011",
+          "ruleId": "C26433",
           "message": {
-            "text": "Dereferencing NULL pointer 'current'. See line 119 for an earlier location where this can occur"
+            "text": "Function 'DisciplineRepo::addDiscipline' should be marked with 'override' (c.128)."
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/LinkedList.h"
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/DisciplineRepo.cpp"
                 },
                 "region": {
-                  "startLine": 123,
-                  "startColumn": 3,
-                  "endLine": 123,
-                  "endColumn": 20
+                  "startLine": 35,
+                  "startColumn": 22,
+                  "endLine": 35,
+                  "endColumn": 22
                 }
               },
               "logicalLocations": [
                 {
-                  "decoratedName": "?remove@?$LinkedList@VDiscipline@@@@QAEXAAV?$LIIterator@VDiscipline@@@@@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "codeFlows": [
-            {
-              "threadFlows": [
-                {
-                  "locations": [
-                    {
-                      "index": 0,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/LinkedList.h"
-                          },
-                          "region": {
-                            "startLine": 108,
-                            "startColumn": 16
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 1,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/LinkedList.h"
-                          },
-                          "region": {
-                            "startLine": 109,
-                            "startColumn": 17
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 2,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/LinkedList.h"
-                          },
-                          "region": {
-                            "startLine": 117,
-                            "startColumn": 17
-                          }
-                        }
-                      },
-                      "importance": "unimportant"
-                    },
-                    {
-                      "index": 3,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/LinkedList.h"
-                          },
-                          "region": {
-                            "startLine": 119,
-                            "startColumn": 38
-                          }
-                        },
-                        "message": {
-                          "text": "'current' may be NULL"
-                        }
-                      },
-                      "kinds": [
-                        "declaration"
-                      ],
-                      "importance": "important"
-                    },
-                    {
-                      "index": 4,
-                      "location": {
-                        "physicalLocation": {
-                          "artifactLocation": {
-                            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/LinkedList.h"
-                          },
-                          "region": {
-                            "startLine": 123,
-                            "startColumn": 11
-                          }
-                        },
-                        "message": {
-                          "text": "'current' is dereferenced, but may still be NULL"
-                        }
-                      },
-                      "kinds": [
-                        "usage"
-                      ],
-                      "importance": "essential"
-                    }
-                  ]
-                }
-              ]
-            }
-          ],
-          "suppressions": []
-        },
-        {
-          "ruleId": "C26440",
-          "message": {
-            "text": "Function 'LIIterator<Discipline>::next' can be declared 'noexcept' (f.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/LIIterator.h"
-                },
-                "region": {
-                  "startLine": 32,
-                  "startColumn": 28,
-                  "endLine": 32,
-                  "endColumn": 28
-                }
-              },
-              "logicalLocations": [
-                {
-                  "decoratedName": "?next@?$LIIterator@VDiscipline@@@@QAEXXZ",
+                  "decoratedName": "?addDiscipline@DisciplineRepo@@UAEXABVDiscipline@@@Z",
                   "kind": "function"
                 }
               ]
@@ -296,110 +229,26 @@
           "suppressions": []
         },
         {
-          "ruleId": "C26440",
+          "ruleId": "C26433",
           "message": {
-            "text": "Function 'LIIterator<Discipline>::valid' can be declared 'noexcept' (f.6)."
+            "text": "Function 'DisciplineRepo::removeDiscipline' should be marked with 'override' (c.128)."
           },
           "locations": [
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/LIIterator.h"
+                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/DisciplineRepo.cpp"
                 },
                 "region": {
-                  "startLine": 37,
-                  "startColumn": 28,
-                  "endLine": 37,
-                  "endColumn": 28
+                  "startLine": 43,
+                  "startColumn": 22,
+                  "endLine": 43,
+                  "endColumn": 22
                 }
               },
               "logicalLocations": [
                 {
-                  "decoratedName": "?valid@?$LIIterator@VDiscipline@@@@QBE_NXZ",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "suppressions": []
-        },
-        {
-          "ruleId": "C26440",
-          "message": {
-            "text": "Function 'LIIterator<Discipline>::operator!=' can be declared 'noexcept' (f.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/LIIterator.h"
-                },
-                "region": {
-                  "startLine": 58,
-                  "startColumn": 28,
-                  "endLine": 58,
-                  "endColumn": 28
-                }
-              },
-              "logicalLocations": [
-                {
-                  "decoratedName": "??9?$LIIterator@VDiscipline@@@@QAE_NABV0@@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "suppressions": []
-        },
-        {
-          "ruleId": "C26440",
-          "message": {
-            "text": "Function 'LIIterator<Discipline>::LIIterator<Discipline>' can be declared 'noexcept' (f.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/LIIterator.h"
-                },
-                "region": {
-                  "startLine": 17,
-                  "startColumn": 2,
-                  "endLine": 17,
-                  "endColumn": 2
-                }
-              },
-              "logicalLocations": [
-                {
-                  "decoratedName": "??0?$LIIterator@VDiscipline@@@@QAE@ABV?$LinkedList@VDiscipline@@@@@Z",
-                  "kind": "function"
-                }
-              ]
-            }
-          ],
-          "suppressions": []
-        },
-        {
-          "ruleId": "C26440",
-          "message": {
-            "text": "Function 'Node<Discipline>::getData' can be declared 'noexcept' (f.6)."
-          },
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/Node.h"
-                },
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 27,
-                  "endLine": 18,
-                  "endColumn": 27
-                }
-              },
-              "logicalLocations": [
-                {
-                  "decoratedName": "?getData@?$Node@VDiscipline@@@@QAEAAVDiscipline@@XZ",
+                  "decoratedName": "?removeDiscipline@DisciplineRepo@@UAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z",
                   "kind": "function"
                 }
               ]
@@ -417,7 +266,7 @@
       },
       "invocations": [
         {
-          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0085B1D0 -il C:\\Users\\raulp\\AppData\\Local\\Temp\\_CL_f102789cast -typedil -f DisciplineRepo.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829337 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -nologo -W 4 -WX -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -FoDebug\\DisciplineRepo.obj -FdDebug\\vc142.pdb -Gd -analyze:projectdirectory C:\\Users\\raulp\\Documents\\Facultate\\Programare orientata pe obiecte\\Laboratoare\\LAB6-7_Raul_Pele\\LAB6-7_Raul_Pele -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset ruleset.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
+          "commandLine": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\c1xx.dll\" -ACf{1F7B090C-16DB-4822-966A-A93D26ED4681} -ACpmspft140.dll -Alint -D_PREFAST_ -D_AST_FE_ -Analyze -zm0x0029B1D0 -il C:\\Users\\raulp\\AppData\\Local\\Temp\\_CL_c1ef59ccast -typedil -f DisciplineRepo.cpp -Ze -D_MSC_EXTENSIONS -Zp8 -Gs -pc \\:/ -D_MSC_VER=1928 -D_MSC_FULL_VER=192829337 -D_MSC_BUILD=0 -D_WIN32 -D_M_IX86=600 -D_M_IX86_FP=2 -GR -D_CPPRTTI -nologo -W 4 -WX -diagnostics:column -D_GUARDOVERFLOW_CRT_ALLOCATORS=1 -Ot -DCODE_ANALYSIS -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -EHs -D_CPPUNWIND -EHc -D__MSVC_RUNTIME_CHECKS -RTCs -RTCu -MDd -D_DEBUG -D_MT -D_DLL -GS -D_M_FP_PRECISE -permissive- -Zc:wchar_t -Zc:forScope -FoDebug\\DisciplineRepo.obj -FdDebug\\vc142.pdb -Gd -analyze:projectdirectory C:\\Users\\raulp\\Documents\\Facultate\\Programare orientata pe obiecte\\Laboratoare\\LAB6-7_Raul_Pele\\LAB6-7_Raul_Pele -analyze:rulesetdirectory ;C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\Team Tools\\Static Analysis Tools\\\\Rule Sets; -analyze:ruleset ruleset.ruleset -analyze:quiet -analyze:plugin C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\bin\\HostX86\\x86\\EspXEngine.dll -FC -errorreport:prompt -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Tools\\MSVC\\14.28.29333\\atlmfc\\include -I C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\\VC\\Auxiliary\\VS\\include -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\ucrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\um -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\shared -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\winrt -I C:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.18362.0\\cppwinrt -I C:\\Program Files (x86)\\Windows Kits\\NETFXSDK\\4.8\\Include\\um",
           "executionSuccessful": true
         }
       ],
@@ -457,7 +306,39 @@
         },
         {
           "location": {
-            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/DisciplineService.h"
+            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/DisciplineRepo.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/DisciplineFileRepo.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/Contract.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/DisciplineCountDTO.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/UndoAction.h"
           },
           "roles": [
             "resultFile"
@@ -506,14 +387,6 @@
         },
         {
           "location": {
-            "uri": "file:///c:/users/raulp/documents/facultate/programare orientata pe obiecte/laboratoare/lab6-7_raul_pele/lab6-7_raul_pele/disciplinerepo.h"
-          },
-          "roles": [
-            "responseFile"
-          ]
-        },
-        {
-          "location": {
             "uri": "file:///c:/users/raulp/documents/facultate/programare orientata pe obiecte/laboratoare/lab6-7_raul_pele/lab6-7_raul_pele/compare.h"
           },
           "roles": [
@@ -522,7 +395,23 @@
         },
         {
           "location": {
-            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/main.cpp"
+            "uri": "file:///c:/users/raulp/documents/facultate/programare orientata pe obiecte/laboratoare/lab6-7_raul_pele/lab6-7_raul_pele/repo.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///c:/users/raulp/documents/facultate/programare orientata pe obiecte/laboratoare/lab6-7_raul_pele/lab6-7_raul_pele/disciplineservice.h"
+          },
+          "roles": [
+            "responseFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/RepoLab.cpp"
           },
           "roles": [
             "analysisTarget",
@@ -531,7 +420,7 @@
         },
         {
           "location": {
-            "uri": "file:///c:/users/raulp/documents/facultate/programare orientata pe obiecte/laboratoare/lab6-7_raul_pele/lab6-7_raul_pele/console.h"
+            "uri": "file:///c:/users/raulp/documents/facultate/programare orientata pe obiecte/laboratoare/lab6-7_raul_pele/lab6-7_raul_pele/repolab.h"
           },
           "roles": [
             "responseFile"
@@ -539,18 +428,35 @@
         },
         {
           "location": {
-            "uri": "file:///c:/users/raulp/documents/facultate/programare orientata pe obiecte/laboratoare/lab6-7_raul_pele/lab6-7_raul_pele/compare.cpp"
+            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/UndoAdd.h"
           },
           "roles": [
-            "analysisTarget"
+            "resultFile"
           ]
         },
         {
           "location": {
-            "uri": "file:///c:/users/raulp/documents/facultate/programare orientata pe obiecte/laboratoare/lab6-7_raul_pele/lab6-7_raul_pele/disciplineservice.cpp"
+            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/UndoRemove.h"
           },
           "roles": [
-            "analysisTarget"
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/UndoModify.h"
+          },
+          "roles": [
+            "resultFile"
+          ]
+        },
+        {
+          "location": {
+            "uri": "file:///C:/Users/raulp/Documents/Facultate/Programare orientata pe obiecte/Laboratoare/LAB6-7_Raul_Pele/LAB6-7_Raul_Pele/DisciplineService.cpp"
+          },
+          "roles": [
+            "analysisTarget",
+            "resultFile"
           ]
         },
         {

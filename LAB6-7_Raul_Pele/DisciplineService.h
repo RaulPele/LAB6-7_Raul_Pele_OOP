@@ -1,20 +1,30 @@
 #pragma once
 #include "DisciplineRepo.h"
+#include "Contract.h"
+#include "validators.h"
+#include "DisciplineCountDTO.h"
+#include "UndoAction.h"
+#include "Repo.h"
+
 #include <string>
 #include <vector>
-#include "LinkedList.h"
-#include "validators.h"
+#include <map>
 using namespace std;
 
 
 class DisciplineService {
 private:
-	DisciplineRepo& discRepo;
+	Repo& discRepo;
+	Contract contract;
 	const DisciplineValidator& validator;
+	vector<UndoAction*> undoList;
 
 public:
 	//DisciplineService(DisciplineRepo& discRepo) : discRepo(discRepo){};
-	DisciplineService(DisciplineRepo& discRepo, const DisciplineValidator& validator) : discRepo(discRepo), validator(validator){};
+	DisciplineService(Repo& discRepo, const DisciplineValidator& validator) : discRepo(discRepo), validator(validator),
+									contract(discRepo){};
+
+	~DisciplineService();
 
 	/*
 	preconditii:  name - const string& name -> numele disciplinei care se adauga
@@ -55,7 +65,7 @@ public:
 	/*
 	Returneaza referinta constnata la lista de discipline.
 	*/
-	const LinkedList<Discipline>& getAll() const;
+	const vector<Discipline> getAll() const;
 
 	/*
 	preconditii: name - const string& -> referinta la numele disciplinei care se cauta
@@ -69,36 +79,76 @@ public:
 	preconditii: teacher - const string&  -> referinta la numele profesorului dupa care se filtreaza
 	postconditii: returneaza o lista de discipline avand profesorul teacher
 	*/
-	const LinkedList<Discipline> filterDisciplineByTeacher(const string& teacher);
+	const vector<Discipline> filterDisciplineByTeacher(const string& teacher);
 
 	/*
 	preconditii: hoursPerWeek - const int  -> numarul de ore pe saptamana dupa care se filtreaza
 	postconditii: returneaza o lista de discipline avand numarul de ore pe saptamana hoursPerWeek
 	*/
-	const LinkedList<Discipline> filterDisciplineByHours(const int hoursPerWeek);
+	const vector<Discipline> filterDisciplineByHours(const int hoursPerWeek);
 
 	/*
 	preconditii: mode - string modul in care se face sortarea
-	postconditii: return sorted - const LinkedList<Discipline> contine disciplinele sortate dupa nume
+	postconditii: return sorted - const vector<Discipline> contine disciplinele sortate dupa nume
 
 	Sorteaza disciplinele dupa nume si returneaza rezultatul.
 	*/
-	const LinkedList<Discipline> sortDisciplinesByName(string mode);
+	const vector<Discipline> sortDisciplinesByName(string mode);
 
 	/*
 	preconditii: mode - string modul in care se face sortarea
-	postconditii: return sorted - const LinkedList<Discipline> contine disciplinele sortate dupa numarul de ore pe saptamana
+	postconditii: return sorted - const vector<Discipline> contine disciplinele sortate dupa numarul de ore pe saptamana
 
 	Sorteaza disciplinele dupa numarul de ore pe saptamana si returneaza rezultatul.
 	*/
-	const LinkedList<Discipline> sortDisciplinesByHours(string mode);
+	const vector<Discipline> sortDisciplinesByHours(string mode);
 
 	/*
 	preconditii: mode - string modul in care se face sortarea
-	postconditii: return sorted - const LinkedList<Discipline> contine disciplinele sortate dupa profesor si tip
+	postconditii: return sorted - const vector<Discipline> contine disciplinele sortate dupa profesor si tip
 
 	Sorteaza disciplinele dupa profesor si tip si returneaza rezultatul.
 	*/
-	const LinkedList<Discipline> sortDisciplinesByTeacherAndType(string mode);
+	const vector<Discipline> sortDisciplinesByTeacherAndType(string mode);
+
+	
+	/*
+	* preconditii: name - const string& numele disciplinei care se adauga in contract
+	*				type - const string& tipul disciplinei care se adauga in contract
+	* postconditii: lista de discipline se actualizeaza. returneaza disciplinele ramase disponibile de a fi adaugate in contract
+	* 
+	* adauga o disciplina in contract
+	* throw DiscNotFoundError daca disciplina nu exista in repo
+	* throw DiscExistsError daca disciplina se afla deja in contract
+	*/
+	void addToContract(const string& name, const string& type);
+
+	/*
+	Genereaza un contract cu discipline aleatorii.
+	*/
+	void generateContract(int nrOfDisc);
+
+	/*
+	Goleste contractul.
+	*/
+	void clearContract();
+
+	/*
+	Exporta contractul in format html.
+	*/
+	void exportContract(const string& destFile);
+
+	int getContractLength();
+
+	vector<Discipline>& getContractDisciplines();
+
+	vector<Discipline> getUnique();
+
+	map<string, DisciplineCountDTO> createReport();
+
+	/*
+	Efectueaza operatia de undo.
+	*/
+	void undo();
 
 };

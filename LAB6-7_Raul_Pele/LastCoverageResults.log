@@ -1,4 +1,4 @@
-[2021-04-12 11:17:10] [info] Start Program:
+[2021-04-19 11:19:51] [info] Start Program:
 Path:"C:\\Users\\raulp\\Documents\\Facultate\\Programare orientata pe obiecte\\Laboratoare\\LAB6-7_Raul_Pele\\Debug\\LAB6-7_Raul_Pele.exe"
 Arguments:
 Working directory: "C:\\Users\\raulp\\Documents\\Facultate\\Programare orientata pe obiecte\\Laboratoare\\LAB6-7_Raul_Pele\\LAB6-7_Raul_Pele\\"
@@ -9,13 +9,13 @@ Cover Children: 0
 Aggregate by file: 1
 Continue after C++ exception: 0
 Optimized build support: 0
-Export: binary C:\Users\raulp\AppData\Local\Temp\vfkhwuyw.3va 
+Export: binary C:\Users\raulp\AppData\Local\Temp\0pex4dzr.dzo 
 Input coverage: 
 Unified diff: 
 Excluded line regular expressions: 
 Substitute pdb source paths: 
 
-[2021-04-12 11:17:10] [info] Module: C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\Debug\LAB6-7_Raul_Pele.exe is selected because it matches selected pattern: C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\Debug\LAB6-7_Raul_Pele.exe
-[2021-04-12 11:17:10] [info] ----------------------------------------------------
-[2021-04-12 11:17:10] [info] Coverage binary generated in file: C:\Users\raulp\AppData\Local\Temp\vfkhwuyw.3va
-[2021-04-12 11:17:10] [info] ----------------------------------------------------
+[2021-04-19 11:19:51] [info] Module: C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\Debug\LAB6-7_Raul_Pele.exe is selected because it matches selected pattern: C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\Debug\LAB6-7_Raul_Pele.exe
+[2021-04-19 11:19:51] [info] ----------------------------------------------------
+[2021-04-19 11:19:51] [info] Coverage binary generated in file: C:\Users\raulp\AppData\Local\Temp\0pex4dzr.dzo
+[2021-04-19 11:19:51] [info] ----------------------------------------------------

@@ -20,3 +20,12 @@ bool Discipline::operator==(const Discipline& a) const{
 	return this->name == a.name && this->type == a.type && this->hoursPerWeek == a.hoursPerWeek && \
 		this->teacher == a.teacher;
 }
+
+string Discipline::toString() const {
+	string output;
+	output.append("Nume: " + this->getName() + "\n"+ \
+		"Tip: " + this->getType() + "\n" + \
+		"Ore pe saptamana: " + to_string(this->getHoursPerWeek()) + "\n" + \
+		"Profesor: " + this->getTeacher()+ "\n");
+	return output;
+}

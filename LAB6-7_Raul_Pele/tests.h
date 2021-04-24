@@ -16,9 +16,21 @@ void testFilterDisciplines();
 //sorting
 void testSortDisciplines();
 
-
 void testDomain();
 
 void testLinkedList();
 void testValidateName();
 void testValidateHours();
+
+//contract
+void testAddToContractSrv();
+void testGenerateContractSrv();
+
+void testCreateReportSrv();
+
+void testFileRepo();
+
+void testUndo();
+
+void testAddRepoLab();
+void testRemoveRepoLab();

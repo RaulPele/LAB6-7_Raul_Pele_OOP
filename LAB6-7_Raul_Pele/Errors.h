@@ -25,3 +25,23 @@ class InvalidDataError : public Error {
 public:
 	InvalidDataError(const string& message): Error(message){}
 };
+
+class OutOfBoundsError : public Error {
+public: 
+	OutOfBoundsError(const string& message):Error(message){}
+};
+
+class FileError : public Error {
+public:
+	FileError(const string& message): Error(message){}
+};
+
+class ServiceError : public Error {
+public:
+	ServiceError(const string& message) : Error(message){}
+};
+
+class ProbabilityError : public Error {
+public:
+	ProbabilityError(const string& message) : Error(message){}
+};

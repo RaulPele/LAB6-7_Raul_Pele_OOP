@@ -4,28 +4,126 @@
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>Discipline.h</FILENAME>
-      <LINE>18</LINE>
+      <LINE>14</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Discipline::{ctor}</FUNCTION>
+    <DECORATED>??0Discipline@@QAE@XZ</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Discipline.h</FILENAME>
+      <LINE>17</LINE>
       <COLUMN>1</COLUMN>
     </SFA>
     <DEFECTCODE>26432</DEFECTCODE>
     <DESCRIPTION>If you define or delete any default operation in the type 'class Discipline', define or delete them all (c.21).</DESCRIPTION>
     <FUNCTION>Discipline::{ctor}</FUNCTION>
     <DECORATED>??0Discipline@@QAE@ABV0@@Z</DECORATED>
-    <FUNCLINE>18</FUNCLINE>
+    <FUNCLINE>17</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
-      <FILENAME>DisciplineService.h</FILENAME>
-      <LINE>17</LINE>
+      <FILENAME>DisciplineRepo.h</FILENAME>
+      <LINE>51</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class DisciplineRepo', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>DisciplineRepo::{dtor}</FUNCTION>
+    <DECORATED>??1DisciplineRepo@@UAE@XZ</DECORATED>
+    <FUNCLINE>51</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineFileRepo.h</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class DisciplineFileRepo', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>DisciplineFileRepo::{dtor}</FUNCTION>
+    <DECORATED>??1DisciplineFileRepo@@UAE@XZ</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>Contract.h</FILENAME>
+      <LINE>16</LINE>
       <COLUMN>1</COLUMN>
     </SFA>
     <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'DisciplineService::DisciplineService' can be declared 'noexcept' (f.6).</DESCRIPTION>
-    <FUNCTION>DisciplineService::{ctor}</FUNCTION>
-    <DECORATED>??0DisciplineService@@QAE@AAVDisciplineRepo@@ABVDisciplineValidator@@@Z</DECORATED>
+    <DESCRIPTION>Function 'Contract::Contract' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>Contract::{ctor}</FUNCTION>
+    <DECORATED>??0Contract@@QAE@AAVRepo@@@Z</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineCountDTO.h</FILENAME>
+      <LINE>13</LINE>
+      <COLUMN>5</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'DisciplineCountDTO::getCount' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>DisciplineCountDTO::getCount</FUNCTION>
+    <DECORATED>?getCount@DisciplineCountDTO@@QAEHXZ</DECORATED>
+    <FUNCLINE>13</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineCountDTO.h</FILENAME>
+      <LINE>14</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>26440</DEFECTCODE>
+    <DESCRIPTION>Function 'DisciplineCountDTO::setCount' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>DisciplineCountDTO::setCount</FUNCTION>
+    <DECORATED>?setCount@DisciplineCountDTO@@QAEXH@Z</DECORATED>
+    <FUNCLINE>14</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineCountDTO.h</FILENAME>
+      <LINE>17</LINE>
+      <COLUMN>1</COLUMN>
+    </SFA>
+    <DEFECTCODE>26455</DEFECTCODE>
+    <DESCRIPTION>Default constructor may not throw. Declare it 'noexcept' (f.6).</DESCRIPTION>
+    <FUNCTION>DisciplineCountDTO::{ctor}</FUNCTION>
+    <DECORATED>??0DisciplineCountDTO@@QAE@XZ</DECORATED>
     <FUNCLINE>17</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>UndoAction.h</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class UndoAction', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>UndoAction::{dtor}</FUNCTION>
+    <DECORATED>??1UndoAction@@UAE@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
@@ -46,56 +144,70 @@
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>tests.cpp</FILENAME>
-      <LINE>208</LINE>
-      <COLUMN>24</COLUMN>
+      <LINE>498</LINE>
+      <COLUMN>5</COLUMN>
     </SFA>
     <DEFECTCODE>26496</DEFECTCODE>
-    <DESCRIPTION>The variable 'it' is assigned only once, mark it as const (con.4).</DESCRIPTION>
-    <FUNCTION>testModifyDiscSrv</FUNCTION>
-    <DECORATED>?testModifyDiscSrv@@YAXXZ</DECORATED>
-    <FUNCLINE>199</FUNCLINE>
+    <DESCRIPTION>The variable 'newHrs' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>testUndo</FUNCTION>
+    <DECORATED>?testUndo@@YAXXZ</DECORATED>
+    <FUNCLINE>493</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>tests.cpp</FILENAME>
-      <LINE>213</LINE>
-      <COLUMN>24</COLUMN>
+      <LINE>520</LINE>
+      <COLUMN>7</COLUMN>
     </SFA>
     <DEFECTCODE>26496</DEFECTCODE>
-    <DESCRIPTION>The variable 'it2' is assigned only once, mark it as const (con.4).</DESCRIPTION>
-    <FUNCTION>testModifyDiscSrv</FUNCTION>
-    <DECORATED>?testModifyDiscSrv@@YAXXZ</DECORATED>
-    <FUNCLINE>199</FUNCLINE>
+    <DESCRIPTION>The variable 'p' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>testAddRepoLab</FUNCTION>
+    <DECORATED>?testAddRepoLab@@YAXXZ</DECORATED>
+    <FUNCLINE>519</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>tests.cpp</FILENAME>
-      <LINE>218</LINE>
-      <COLUMN>24</COLUMN>
+      <LINE>520</LINE>
+      <COLUMN>11</COLUMN>
     </SFA>
-    <DEFECTCODE>26496</DEFECTCODE>
-    <DESCRIPTION>The variable 'it3' is assigned only once, mark it as const (con.4).</DESCRIPTION>
-    <FUNCTION>testModifyDiscSrv</FUNCTION>
-    <DECORATED>?testModifyDiscSrv@@YAXXZ</DECORATED>
-    <FUNCLINE>199</FUNCLINE>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>testAddRepoLab</FUNCTION>
+    <DECORATED>?testAddRepoLab@@YAXXZ</DECORATED>
+    <FUNCLINE>519</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>tests.cpp</FILENAME>
-      <LINE>223</LINE>
-      <COLUMN>24</COLUMN>
+      <LINE>554</LINE>
+      <COLUMN>7</COLUMN>
     </SFA>
     <DEFECTCODE>26496</DEFECTCODE>
-    <DESCRIPTION>The variable 'it4' is assigned only once, mark it as const (con.4).</DESCRIPTION>
-    <FUNCTION>testModifyDiscSrv</FUNCTION>
-    <DECORATED>?testModifyDiscSrv@@YAXXZ</DECORATED>
-    <FUNCLINE>199</FUNCLINE>
+    <DESCRIPTION>The variable 'p' is assigned only once, mark it as const (con.4).</DESCRIPTION>
+    <FUNCTION>testRemoveRepoLab</FUNCTION>
+    <DECORATED>?testRemoveRepoLab@@YAXXZ</DECORATED>
+    <FUNCLINE>553</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>tests.cpp</FILENAME>
+      <LINE>554</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26493</DEFECTCODE>
+    <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
+    <FUNCTION>testRemoveRepoLab</FUNCTION>
+    <DECORATED>?testRemoveRepoLab@@YAXXZ</DECORATED>
+    <FUNCLINE>553</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
