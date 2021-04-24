@@ -31,6 +31,20 @@
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineRepo.h</FILENAME>
+      <LINE>51</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class DisciplineRepo', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>DisciplineRepo::{dtor}</FUNCTION>
+    <DECORATED>??1DisciplineRepo@@UAE@XZ</DECORATED>
+    <FUNCLINE>51</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>Contract.h</FILENAME>
       <LINE>16</LINE>
       <COLUMN>1</COLUMN>
@@ -38,7 +52,7 @@
     <DEFECTCODE>26440</DEFECTCODE>
     <DESCRIPTION>Function 'Contract::Contract' can be declared 'noexcept' (f.6).</DESCRIPTION>
     <FUNCTION>Contract::{ctor}</FUNCTION>
-    <DECORATED>??0Contract@@QAE@AAVDisciplineRepo@@@Z</DECORATED>
+    <DECORATED>??0Contract@@QAE@AAVRepo@@@Z</DECORATED>
     <FUNCLINE>16</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
@@ -101,43 +115,211 @@
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>UndoAction.h</FILENAME>
+      <LINE>5</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class UndoAction', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>UndoAction::{dtor}</FUNCTION>
+    <DECORATED>??1UndoAction@@UAE@XZ</DECORATED>
+    <FUNCLINE>5</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>UndoAdd.h</FILENAME>
+      <LINE>15</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class UndoAdd', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>UndoAdd::{dtor}</FUNCTION>
+    <DECORATED>??1UndoAdd@@UAE@XZ</DECORATED>
+    <FUNCLINE>15</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>UndoRemove.h</FILENAME>
+      <LINE>15</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class UndoRemove', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>UndoRemove::{dtor}</FUNCTION>
+    <DECORATED>??1UndoRemove@@UAE@XZ</DECORATED>
+    <FUNCLINE>15</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>UndoModify.h</FILENAME>
+      <LINE>16</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class UndoModify', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>UndoModify::{dtor}</FUNCTION>
+    <DECORATED>??1UndoModify@@UAE@XZ</DECORATED>
+    <FUNCLINE>16</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>DisciplineService.cpp</FILENAME>
-      <LINE>209</LINE>
+      <LINE>33</LINE>
+      <COLUMN>30</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>DisciplineService::addDiscipline</FUNCTION>
+    <DECORATED>?addDiscipline@DisciplineService@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H0@Z</DECORATED>
+    <FUNCLINE>20</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>33</LINE>
+      <COLUMN>30</COLUMN>
+    </SFA>
+    <DEFECTCODE>26400</DEFECTCODE>
+    <DESCRIPTION>Do not assign the result of an allocation or a function call with an owner&lt;T&gt; return value to a raw pointer, use owner&lt;T&gt; instead (i.11).</DESCRIPTION>
+    <FUNCTION>DisciplineService::addDiscipline</FUNCTION>
+    <DECORATED>?addDiscipline@DisciplineService@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0H0@Z</DECORATED>
+    <FUNCLINE>20</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>47</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>DisciplineService::removeDiscipline</FUNCTION>
+    <DECORATED>?removeDiscipline@DisciplineService@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z</DECORATED>
+    <FUNCLINE>37</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>47</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26400</DEFECTCODE>
+    <DESCRIPTION>Do not assign the result of an allocation or a function call with an owner&lt;T&gt; return value to a raw pointer, use owner&lt;T&gt; instead (i.11).</DESCRIPTION>
+    <FUNCTION>DisciplineService::removeDiscipline</FUNCTION>
+    <DECORATED>?removeDiscipline@DisciplineService@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z</DECORATED>
+    <FUNCLINE>37</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26409</DEFECTCODE>
+    <DESCRIPTION>Avoid calling new and delete explicitly, use std::make_unique&lt;T&gt; instead (r.11).</DESCRIPTION>
+    <FUNCTION>DisciplineService::modifyDiscipline</FUNCTION>
+    <DECORATED>?modifyDiscipline@DisciplineService@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0AAV23@1H1@Z</DECORATED>
+    <FUNCLINE>66</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>98</LINE>
+      <COLUMN>36</COLUMN>
+    </SFA>
+    <DEFECTCODE>26400</DEFECTCODE>
+    <DESCRIPTION>Do not assign the result of an allocation or a function call with an owner&lt;T&gt; return value to a raw pointer, use owner&lt;T&gt; instead (i.11).</DESCRIPTION>
+    <FUNCTION>DisciplineService::modifyDiscipline</FUNCTION>
+    <DECORATED>?modifyDiscipline@DisciplineService@@QAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0AAV23@1H1@Z</DECORATED>
+    <FUNCLINE>66</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>227</LINE>
       <COLUMN>29</COLUMN>
     </SFA>
     <DEFECTCODE>26496</DEFECTCODE>
     <DESCRIPTION>The variable 'dist' is assigned only once, mark it as const (con.4).</DESCRIPTION>
     <FUNCTION>DisciplineService::generateContract</FUNCTION>
     <DECORATED>?generateContract@DisciplineService@@QAEXH@Z</DECORATED>
-    <FUNCLINE>189</FUNCLINE>
+    <FUNCLINE>207</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>DisciplineService.cpp</FILENAME>
-      <LINE>210</LINE>
+      <LINE>228</LINE>
       <COLUMN>6</COLUMN>
     </SFA>
     <DEFECTCODE>26496</DEFECTCODE>
     <DESCRIPTION>The variable 'nr' is assigned only once, mark it as const (con.4).</DESCRIPTION>
     <FUNCTION>DisciplineService::generateContract</FUNCTION>
     <DECORATED>?generateContract@DisciplineService@@QAEXH@Z</DECORATED>
-    <FUNCLINE>189</FUNCLINE>
+    <FUNCLINE>207</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>DisciplineService.cpp</FILENAME>
-      <LINE>197</LINE>
+      <LINE>215</LINE>
       <COLUMN>5</COLUMN>
     </SFA>
     <DEFECTCODE>26493</DEFECTCODE>
     <DESCRIPTION>Don't use C-style casts (type.4).</DESCRIPTION>
     <FUNCTION>DisciplineService::generateContract</FUNCTION>
     <DECORATED>?generateContract@DisciplineService@@QAEXH@Z</DECORATED>
-    <FUNCLINE>189</FUNCLINE>
+    <FUNCLINE>207</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>283</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>26429</DEFECTCODE>
+    <DESCRIPTION>Symbol 'act' is never tested for nullness, it can be marked as not_null (f.23).</DESCRIPTION>
+    <FUNCTION>DisciplineService::undo</FUNCTION>
+    <DECORATED>?undo@DisciplineService@@QAEXXZ</DECORATED>
+    <FUNCLINE>278</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineService.cpp</FILENAME>
+      <LINE>290</LINE>
+      <COLUMN>20</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class DisciplineService', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>DisciplineService::{dtor}</FUNCTION>
+    <DECORATED>??1DisciplineService@@QAE@XZ</DECORATED>
+    <FUNCLINE>290</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
 </DEFECTS>

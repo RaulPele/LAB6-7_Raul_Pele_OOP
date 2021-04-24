@@ -31,6 +31,20 @@
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineRepo.h</FILENAME>
+      <LINE>51</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class DisciplineRepo', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>DisciplineRepo::{dtor}</FUNCTION>
+    <DECORATED>??1DisciplineRepo@@UAE@XZ</DECORATED>
+    <FUNCLINE>51</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>Errors.h</FILENAME>
       <LINE>11</LINE>
       <COLUMN>15</COLUMN>
@@ -47,13 +61,69 @@
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>DisciplineRepo.cpp</FILENAME>
       <LINE>8</LINE>
-      <COLUMN>42</COLUMN>
+      <COLUMN>41</COLUMN>
     </SFA>
-    <DEFECTCODE>26440</DEFECTCODE>
-    <DESCRIPTION>Function 'DisciplineRepo::getAll' can be declared 'noexcept' (f.6).</DESCRIPTION>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'DisciplineRepo::getAll' should be marked with 'override' (c.128).</DESCRIPTION>
     <FUNCTION>DisciplineRepo::getAll</FUNCTION>
-    <DECORATED>?getAll@DisciplineRepo@@QBEABV?$vector@VDiscipline@@V?$allocator@VDiscipline@@@std@@@std@@XZ</DECORATED>
+    <DECORATED>?getAll@DisciplineRepo@@UBE?BV?$vector@VDiscipline@@V?$allocator@VDiscipline@@@std@@@std@@XZ</DECORATED>
     <FUNCLINE>8</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineRepo.cpp</FILENAME>
+      <LINE>12</LINE>
+      <COLUMN>34</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'DisciplineRepo::findDiscipline' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>DisciplineRepo::findDiscipline</FUNCTION>
+    <DECORATED>?findDiscipline@DisciplineRepo@@UBEABVDiscipline@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z</DECORATED>
+    <FUNCLINE>12</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineRepo.cpp</FILENAME>
+      <LINE>25</LINE>
+      <COLUMN>21</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'DisciplineRepo::exists' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>DisciplineRepo::exists</FUNCTION>
+    <DECORATED>?exists@DisciplineRepo@@UBE_NABVDiscipline@@@Z</DECORATED>
+    <FUNCLINE>25</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineRepo.cpp</FILENAME>
+      <LINE>35</LINE>
+      <COLUMN>21</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'DisciplineRepo::addDiscipline' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>DisciplineRepo::addDiscipline</FUNCTION>
+    <DECORATED>?addDiscipline@DisciplineRepo@@UAEXABVDiscipline@@@Z</DECORATED>
+    <FUNCLINE>35</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineRepo.cpp</FILENAME>
+      <LINE>43</LINE>
+      <COLUMN>21</COLUMN>
+    </SFA>
+    <DEFECTCODE>26433</DEFECTCODE>
+    <DESCRIPTION>Function 'DisciplineRepo::removeDiscipline' should be marked with 'override' (c.128).</DESCRIPTION>
+    <FUNCTION>DisciplineRepo::removeDiscipline</FUNCTION>
+    <DECORATED>?removeDiscipline@DisciplineRepo@@UAEXABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@0@Z</DECORATED>
+    <FUNCLINE>43</FUNCLINE>
     <PATH></PATH>
   </DEFECT>
 </DEFECTS>

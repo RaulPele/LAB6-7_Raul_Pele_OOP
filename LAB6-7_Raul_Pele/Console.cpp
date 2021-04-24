@@ -186,6 +186,7 @@ void Console::displayMenu() const {
 	cout << "10. Exporta contractul\n";
 	cout << "11. Goleste contractul\n";
 	cout << "12. Creaza raport\n";
+	cout << "13. Undo\n";
 	cout << "0. Iesire...\n\n";
 };
 
@@ -430,10 +431,19 @@ void Console::createReport() {
 	}
 }
 
+void Console::undo() {
+	try {
+		this->discSrv.undo();
+	}
+	catch (Error& e) {
+		cout << e.getMessage() << endl;
+	}
+}
+
 void Console::run() {
 	/*void (Console:: * funct[4])() const= { &Console::addDiscipline, &Console::removeDiscipline,
 								& Console::findDiscipline,& Console::printDisciplines };*/
-	vector<string> options = { "1", "2", "3", "4", "5", "6", "7","8","9","10", "11","12", "0"};
+	vector<string> options = { "1", "2", "3", "4", "5", "6", "7","8","9","10", "11","12","13", "0"};
 	int op = 0;
 
 	while (true) {
@@ -489,6 +499,10 @@ void Console::run() {
 			
 		case 12:
 			this->createReport();
+			break;
+
+		case 13:
+			this->undo();
 			break;
 
 

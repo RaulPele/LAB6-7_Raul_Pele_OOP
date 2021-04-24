@@ -3,6 +3,8 @@
 #include "Contract.h"
 #include "validators.h"
 #include "DisciplineCountDTO.h"
+#include "UndoAction.h"
+#include "Repo.h"
 
 #include <string>
 #include <vector>
@@ -12,14 +14,17 @@ using namespace std;
 
 class DisciplineService {
 private:
-	DisciplineRepo& discRepo;
+	Repo& discRepo;
 	Contract contract;
 	const DisciplineValidator& validator;
+	vector<UndoAction*> undoList;
 
 public:
 	//DisciplineService(DisciplineRepo& discRepo) : discRepo(discRepo){};
-	DisciplineService(DisciplineRepo& discRepo, const DisciplineValidator& validator) : discRepo(discRepo), validator(validator),
+	DisciplineService(Repo& discRepo, const DisciplineValidator& validator) : discRepo(discRepo), validator(validator),
 									contract(discRepo){};
+
+	~DisciplineService();
 
 	/*
 	preconditii:  name - const string& name -> numele disciplinei care se adauga
@@ -60,7 +65,7 @@ public:
 	/*
 	Returneaza referinta constnata la lista de discipline.
 	*/
-	const vector<Discipline>& getAll() const;
+	const vector<Discipline> getAll() const;
 
 	/*
 	preconditii: name - const string& -> referinta la numele disciplinei care se cauta
@@ -140,5 +145,10 @@ public:
 	vector<Discipline> getUnique();
 
 	map<string, DisciplineCountDTO> createReport();
+
+	/*
+	Efectueaza operatia de undo.
+	*/
+	void undo();
 
 };

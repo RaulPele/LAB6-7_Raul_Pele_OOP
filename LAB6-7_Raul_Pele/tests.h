@@ -27,3 +27,10 @@ void testAddToContractSrv();
 void testGenerateContractSrv();
 
 void testCreateReportSrv();
+
+void testFileRepo();
+
+void testUndo();
+
+void testAddRepoLab();
+void testRemoveRepoLab();

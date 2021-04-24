@@ -10,10 +10,10 @@ using namespace std;
 class Contract {
 private:
 	vector<Discipline> disciplines;
-	DisciplineRepo& discRepo;
+	Repo& discRepo;
 public:
 	//constructors
-	Contract(DisciplineRepo& repo): discRepo(repo){};
+	Contract(Repo& repo): discRepo(repo){};
 	Contract(const Contract& other);
 
 	//operators

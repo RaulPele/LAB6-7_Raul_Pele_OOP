@@ -93,6 +93,21 @@
     <ClCompile Include="Contract.cpp">
       <Filter>Source Files\Business</Filter>
     </ClCompile>
+    <ClCompile Include="DisciplineFileRepo.cpp">
+      <Filter>Source Files\Data\Repository</Filter>
+    </ClCompile>
+    <ClCompile Include="UndoRemove.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="UndoModify.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="UndoAdd.cpp">
+      <Filter>Source Files\Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="RepoLab.cpp">
+      <Filter>Source Files\Data\Repository</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Discipline.h">
@@ -136,6 +151,27 @@
     </ClInclude>
     <ClInclude Include="DisciplineCountDTO.h">
       <Filter>Header Files\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="DisciplineFileRepo.h">
+      <Filter>Header Files\Data\Repository</Filter>
+    </ClInclude>
+    <ClInclude Include="UndoAction.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="UndoAdd.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="UndoRemove.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="UndoModify.h">
+      <Filter>Header Files\Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Repo.h">
+      <Filter>Header Files\Data\Repository</Filter>
+    </ClInclude>
+    <ClInclude Include="RepoLab.h">
+      <Filter>Header Files\Data\Repository</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

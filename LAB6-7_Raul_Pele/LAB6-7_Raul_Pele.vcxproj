@@ -151,11 +151,16 @@
     <ClCompile Include="Console.cpp" />
     <ClCompile Include="Contract.cpp" />
     <ClCompile Include="Discipline.cpp" />
+    <ClCompile Include="DisciplineFileRepo.cpp" />
     <ClCompile Include="DisciplineRepo.cpp" />
     <ClCompile Include="DisciplineService.cpp" />
     <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RepoLab.cpp" />
     <ClCompile Include="tests.cpp" />
+    <ClCompile Include="UndoAdd.cpp" />
+    <ClCompile Include="UndoModify.cpp" />
+    <ClCompile Include="UndoRemove.cpp" />
     <ClCompile Include="validators.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +168,7 @@
     <ClInclude Include="Contract.h" />
     <ClInclude Include="Discipline.h" />
     <ClInclude Include="DisciplineCountDTO.h" />
+    <ClInclude Include="DisciplineFileRepo.h" />
     <ClInclude Include="DisciplineRepo.h" />
     <ClInclude Include="DisciplineService.h" />
     <ClInclude Include="Errors.h" />
@@ -170,8 +176,14 @@
     <ClInclude Include="LIIterator.h" />
     <ClInclude Include="LinkedList.h" />
     <ClInclude Include="Node.h" />
+    <ClInclude Include="Repo.h" />
+    <ClInclude Include="RepoLab.h" />
     <ClInclude Include="sort.h" />
     <ClInclude Include="tests.h" />
+    <ClInclude Include="UndoAction.h" />
+    <ClInclude Include="UndoAdd.h" />
+    <ClInclude Include="UndoModify.h" />
+    <ClInclude Include="UndoRemove.h" />
     <ClInclude Include="validators.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

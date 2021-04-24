@@ -5,7 +5,7 @@
 #include <algorithm>
 using namespace std;
 
-const vector<Discipline>& DisciplineRepo::getAll() const{
+const vector<Discipline> DisciplineRepo::getAll() const{
 	return this->disciplines;
 }
 

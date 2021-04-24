@@ -2,8 +2,9 @@
 #include <vector>
 #include "Discipline.h"
 #include "LinkedList.h"
+#include "Repo.h"
 
-class DisciplineRepo {
+class DisciplineRepo : public Repo{
 private:
 	vector<Discipline> disciplines;
 
@@ -11,7 +12,7 @@ public:
 	/*
 	Returneaza o referinta const la lista de discipline.
 	*/
-	const vector<Discipline>& getAll() const;
+	const vector<Discipline> getAll() const;
 
 	/*
 	preconditii: name - const string& -> referinta la numele disciplinei care se cauta
@@ -26,7 +27,7 @@ public:
 	Adauga disciplina la lista de discipline.
 	throw DiscExistsError - daca disciplina exista deja in lista
 	*/
-	void addDiscipline(const Discipline& discipline);
+	virtual void addDiscipline(const Discipline& discipline);
 
 	/*
 	preconditii: name - const string& -> referinta la numele disciplinei care se sterge
@@ -34,7 +35,7 @@ public:
 	Sterge disciplina cu numele name si tipul type din lista.
 	throw DiscNotFoundError - daca disciplina nu se afla in lista
 	*/
-	void removeDiscipline(const string& name, const string& type);
+	virtual void removeDiscipline(const string& name, const string& type);
 
 	/*
 	preconditii: discipline - const Discipline& -> disciplina pentru care se face cautarea
@@ -45,5 +46,10 @@ public:
 	*/
 	bool exists(const Discipline& discipline) const;
 
-	DisciplineRepo& operator=(const DisciplineRepo& other);
+	 DisciplineRepo& operator=(const DisciplineRepo& other);
+
+	virtual ~DisciplineRepo()
+	{
+
+	}
 };

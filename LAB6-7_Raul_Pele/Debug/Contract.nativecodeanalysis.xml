@@ -31,6 +31,20 @@
   <DEFECT>
     <SFA>
       <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
+      <FILENAME>DisciplineRepo.h</FILENAME>
+      <LINE>51</LINE>
+      <COLUMN>10</COLUMN>
+    </SFA>
+    <DEFECTCODE>26432</DEFECTCODE>
+    <DESCRIPTION>If you define or delete any default operation in the type 'class DisciplineRepo', define or delete them all (c.21).</DESCRIPTION>
+    <FUNCTION>DisciplineRepo::{dtor}</FUNCTION>
+    <DECORATED>??1DisciplineRepo@@UAE@XZ</DECORATED>
+    <FUNCLINE>51</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\raulp\Documents\Facultate\Programare orientata pe obiecte\Laboratoare\LAB6-7_Raul_Pele\LAB6-7_Raul_Pele\</FILEPATH>
       <FILENAME>Contract.h</FILENAME>
       <LINE>16</LINE>
       <COLUMN>1</COLUMN>
@@ -38,7 +52,7 @@
     <DEFECTCODE>26440</DEFECTCODE>
     <DESCRIPTION>Function 'Contract::Contract' can be declared 'noexcept' (f.6).</DESCRIPTION>
     <FUNCTION>Contract::{ctor}</FUNCTION>
-    <DECORATED>??0Contract@@QAE@AAVDisciplineRepo@@@Z</DECORATED>
+    <DECORATED>??0Contract@@QAE@AAVRepo@@@Z</DECORATED>
     <FUNCLINE>16</FUNCLINE>
     <PATH></PATH>
   </DEFECT>

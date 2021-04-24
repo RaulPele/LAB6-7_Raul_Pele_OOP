@@ -1,7 +1,9 @@
 #include "tests.h"
 #include "DisciplineRepo.h"
+#include "DisciplineFileRepo.h"
 #include "DisciplineService.h"
 #include "Discipline.h"
+#include "RepoLab.h"
 #include "Errors.h"
 #include "LinkedList.h"
 #include "LIIterator.h"
@@ -10,6 +12,7 @@
 
 #include <vector>
 #include <assert.h>
+#include <fstream>
 
 void testAddDiscRepo() {
 	DisciplineRepo repo;
@@ -465,6 +468,142 @@ void testCreateReportSrv() {
 
 }
 
+void testFileRepo() {
+	ofstream fout("tests.txt");
+	fout.close();
+
+	DisciplineFileRepo repo{ "tests.txt" };
+	Discipline d1{ "A", "B", 2, "A" };
+	
+
+	repo.addDiscipline(d1);
+	assert(repo.getAll().size() == 1);
+	
+	DisciplineFileRepo repo2{ "tests.txt" };
+	assert(repo2.getAll().size() == 1);
+	repo2.removeDiscipline(d1.getName(), d1.getType());
+
+	DisciplineFileRepo repo3{ "tests.txt" };
+	assert(repo3.getAll().size() == 0);
+
+	remove("tests.txt");
+
+}
+
+void testUndo() {
+	DisciplineRepo repo;
+	Discipline d1{ "A", "B", 2, "A" };
+	DisciplineService srv{ repo, DisciplineValidator() };
+	string newName = "ASD", newTeacher = "", newType = "";
+	int newHrs = -1;
+
+	srv.addDiscipline(d1.getName(), d1.getType(), d1.getHoursPerWeek(), d1.getTeacher());
+	srv.modifyDiscipline(d1.getName(), d1.getType(), newName, newType, newHrs, newTeacher);
+	srv.removeDiscipline(newName, d1.getType());
+	
+	srv.undo();
+	assert(srv.getAll().size() == 1);;
+	srv.undo();
+	assert(srv.getAll().at(0).getName() == "A");
+	srv.undo();
+	assert(srv.getAll().empty() == true);
+	try {
+		srv.undo();
+		assert(false);
+	}
+	catch (ServiceError&) {
+		assert(true);
+	}
+}
+
+void testAddRepoLab() {
+	float p = (float)0.6;
+	RepoLab repo{p};
+	Discipline d1{ "OOP", "Laborator", 2, "AB" };
+	Discipline d2{ "A", "B", 300, "AB" };
+	Discipline d3{ "A", "E", 300, "AE" };
+
+	try {
+		repo.addDiscipline(d1);
+		repo.addDiscipline(d2);
+		repo.addDiscipline(d3);
+	}
+	catch (ProbabilityError&) {
+		assert(true);
+		return;
+	}
+
+	const vector<Discipline>& disciplines = repo.getAll();
+	assert(disciplines.at(0) == d1);
+	assert(disciplines.at(1) == d2);
+	assert(disciplines.at(2) == d3);
+
+	try {
+		repo.addDiscipline(d1);
+	}
+	catch (DiscExistsError& err) {
+		assert(err.getMessage() == "Disciplina se afla deja in lista!");
+	}
+	catch (ProbabilityError& ) {
+		assert(true);
+	}
+	
+}
+
+void testRemoveRepoLab() {
+	float p = (float)0.6;
+	RepoLab repo{ p };
+	Discipline d1{ "OOP", "Laborator", 2, "AB" };
+	Discipline d2{ "LC", "Curs", 10, "E" };
+	Discipline d3{ "A", "B", 3, "E" };
+	Discipline d4{ "Q","W", 30, "Q" };
+
+	try {
+		repo.addDiscipline(d1);
+		repo.addDiscipline(d2);
+		repo.addDiscipline(d4);
+		repo.addDiscipline(d3);
+	}
+	catch (ProbabilityError&) {
+		assert(true);
+		return;
+	}
+
+	try {
+		repo.removeDiscipline("OOP", "Laborator");
+	}
+	catch (ProbabilityError&) {
+		assert(true);
+		return;
+	}
+
+	try {
+		assert(repo.exists(d1) == false);
+		assert(repo.exists(d2));
+		assert(repo.exists(d3));
+
+		repo.removeDiscipline("A", "B");
+		assert(repo.exists(d3) == false);
+		assert(repo.exists(d2));
+	}
+	catch (ProbabilityError&) {
+		assert(true);
+		return;
+	}
+
+
+	try {
+		repo.removeDiscipline("OOP", "Laboorator");
+	}
+	catch (DiscNotFoundError& err) {
+		assert(err.getMessage() == "Disciplina nu se afla in lista!");
+	}
+	catch (ProbabilityError&) {
+		assert(true);
+		return;
+	}
+}
+
 void runTests() {
 	testAddDiscRepo();
 	testRemoveDiscRepo();
@@ -483,5 +622,9 @@ void runTests() {
 	testSortDisciplines();
 	testAddToContractSrv();
 	testGenerateContractSrv();
-	 testCreateReportSrv();
+	testCreateReportSrv();
+	testFileRepo();
+	testUndo();
+	testAddRepoLab();
+	testRemoveRepoLab();
 }
