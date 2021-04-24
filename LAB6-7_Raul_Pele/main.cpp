@@ -12,9 +12,9 @@
 #include <crtdbg.h>
 
 int main() {
-	{//DisciplineFileRepo discRepo{"disciplines.txt"};
-		float p = (float) 0.6;
-		RepoLab discRepo{p};
+	{DisciplineFileRepo discRepo{"disciplines.txt"};
+		//float p = (float) 0.6;
+		//RepoLab discRepo{p};
 	DisciplineValidator validator;
 	DisciplineService discSrv{ discRepo , validator};
 	Console console{ discSrv };
